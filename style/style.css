@@ -5,13 +5,15 @@
   font-weight: normal;
   font-style: normal; }
 
-.title {
+.project__header {
   margin: 20px 0;
   color: #FF6C6A;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 4.4rem; }
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 1; }
   @media all and (max-width: 19.99em) {
-    .title {
+    .project__header {
       font-size: 3.2rem; } }
 
 p,
@@ -20,6 +22,13 @@ p,
   color: #666666;
   font-size: 1.6rem;
   line-height: 2.6rem; }
+
+.subheader {
+  color: #121212;
+  font-family: "GT-Pressura-Regular", "Futura", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1; }
 
 html {
   box-sizing: border-box;
@@ -138,7 +147,7 @@ main {
   .logo .logo-type {
     display: none;
     font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-    font-size: 1.8rem;
+    font-size: 20px;
     color: #FCFCFC;
     text-decoration: none;
     margin-top: -6px; }
@@ -169,7 +178,7 @@ main {
   padding: 0;
   list-style: none;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 1.8rem; }
+  font-size: 20px; }
   @media all and (min-width: 46.25em) {
     .site-nav__list {
       display: block;
@@ -223,36 +232,30 @@ main {
   -o-transition-duration: 300ms;
   transition-duration: 300ms; }
   .contact-me .contact-heading {
-    font-size: 1.8rem;
+    font-size: 20px;
     margin: 0px; }
   .contact-me .email-link {
     font-size: 3.2rem; }
 
 .project-list {
-  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  align-items: flex-start;
-  justify-content: space-between; }
-  .project-list h1, .project-list h2 {
-    color: #FF6C6A; }
+  margin-top: 48px;
+  margin-bottom: 100px; }
 
-.project-list-col-1 {
-  display: flex;
-  width: 100%;
-  flex-direction: column; }
+.title__description {
+  color: #121212; }
+
+.project-list-col {
+  display: grid;
+  width: 100%; }
   @media all and (min-width: 46.25em) {
-    .project-list-col-1 {
-      width: 49%; } }
-  @media all and (min-width: 81.25em) {
-    .project-list-col-1 {
-      width: 630px; } }
+    .project-list-col {
+      max-width: 740px; } }
 
 .project-list__item {
   margin-bottom: 20px; }
