@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: $brand-1;
+  background-color: white;
   display: block;
 
   @include mq($from: tablet) {
     background-color: white;
-    position: fixed;
+    // position: fixed;
   }
 
   @include mq($from: desktop) {

@@ -289,6 +289,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/style/partials/common/_description.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/style/partials/common/_description.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/style/partials/common/_header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -298,6 +311,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/style/partials/common/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/style/partials/common/_meta.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/style/partials/common/_meta.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
