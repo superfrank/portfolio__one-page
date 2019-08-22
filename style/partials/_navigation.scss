@@ -1,0 +1,59 @@
+.site-nav {
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: $brand-1;
+  display: block;
+
+  @include mq($from: tablet) {
+    background-color: white;
+    position: fixed;
+  }
+
+  @include mq($from: desktop) {
+      max-width: 980px;
+  }
+  @include mq($from: wide) {
+      max-width: 1300px;
+  }
+}
+
+
+
+
+.site-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: $sans-serif;
+    font-size: $font-size-medium;
+
+    @include mq($from: tablet) {
+    display: block;
+    position: fixed;
+    top: 2px;
+    }
+
+
+    .site-nav__item {
+        float: left;
+        color: $brand-1;
+        cursor: pointer;
+        padding: 16px 0;
+        width: 33%;
+        text-align: center;
+        border-bottom: none;
+
+        @include mq($from: tablet) {
+        padding: 0px;
+        text-align: left;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+}

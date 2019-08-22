@@ -1,0 +1,36 @@
+.project-list {
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  h1, h2 {
+    color: $brand-1;
+  }
+}
+
+.project-list-col-1 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  @include mq($from: tablet) {
+    width: 49%;
+  }
+
+  @include mq($from: wide) {
+    width: 630px;
+  }
+}
+
+
+.project-list__item {
+  margin-bottom: 20px;
+}
