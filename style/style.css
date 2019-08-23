@@ -30,7 +30,7 @@ p,
   color: #121212;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.2;
   font-weight: normal; }
   @media all and (min-width: 46.25em) {
     .project-list__subheader {
@@ -40,7 +40,7 @@ p,
   color: #121212;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.2;
   font-weight: normal; }
   @media all and (min-width: 46.25em) {
     .project-list__description {
@@ -50,7 +50,7 @@ p,
   color: #666666;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   font-size: 9px;
-  line-height: 1;
+  line-height: 1.0;
   font-weight: normal;
   text-align: right; }
   @media all and (min-width: 23.4375em) {
