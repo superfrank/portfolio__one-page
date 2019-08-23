@@ -12,13 +12,7 @@
     }
 
     .logo__frame, .logo__eyes {
-      fill: $off-white;
-    }
-
-    @include mq($from: tablet) {
-          .logo__frame, .logo__eyes {
-            fill: $brand-1;
-          }
+      fill: $brand-1;
     }
 
     &:hover {
@@ -38,13 +32,8 @@
         display: none;
         font-family: $sans-serif;
         font-size: $font-size-medium;
-        color: $off-white;
+        color: $brand-1;
         text-decoration: none;
         margin-top: -6px;
-
-
-        @include mq($from: tablet) {
-            color: $brand-1;
-        }
     }
 }

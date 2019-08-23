@@ -8,7 +8,6 @@
 
   @include mq($from: tablet) {
     background-color: white;
-    // position: fixed;
   }
 
   @include mq($from: desktop) {

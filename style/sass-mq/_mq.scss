@@ -11,6 +11,8 @@ $mq-responsive: true !default;
 // stakeholders, designers, developers, and testers.
 $mq-breakpoints: (
     mobile:  320px,
+    mobileMedium: 375px,
+    mobileLandscape: 480px,
     tablet:  740px,
     desktop: 980px,
     wide:    1300px
