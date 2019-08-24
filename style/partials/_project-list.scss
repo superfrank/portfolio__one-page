@@ -68,6 +68,9 @@
     @include mq(tablet) {
       max-width: 460px;
     }
+    @include mq(wide) {
+      max-width: 560px;
+    }
   }
 
   &__link {

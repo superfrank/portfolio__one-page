@@ -317,6 +317,9 @@ main {
     @media all and (min-width: 46.25em) {
       .project-list__description {
         max-width: 460px; } }
+    @media all and (min-width: 81.25em) {
+      .project-list__description {
+        max-width: 560px; } }
   .project-list__link {
     line-height: 1.2;
     transition: border 0.5s linear;
