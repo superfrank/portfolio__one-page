@@ -289,7 +289,7 @@ main {
         max-width: 740px; } }
     @media all and (min-width: 81.25em) {
       .project-list__grid {
-        max-width: 840px; } }
+        max-width: 860px; } }
   .project-list__col-2 {
     grid-column: 2; }
   .project-list__col-duo {
