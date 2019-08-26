@@ -349,14 +349,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/text/index.handlebars": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/text/index.handlebars",
-		"oF": 0
 		}
 	},
 "hooks": [
