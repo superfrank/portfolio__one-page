@@ -5,7 +5,11 @@
     align-items: center;
     display: flex;
     justify-content: left;
-    padding-left: 16px;
+    padding-left: 10px;
+
+    @include mq(mobileMedium) {
+      padding-left: 16px;
+    }
 
     @include mq(tablet) {
       height: 80px;

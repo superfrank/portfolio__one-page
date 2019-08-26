@@ -39,7 +39,7 @@
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,
-		"oAP": "/build/node_modules",
+		"oAP": "/one-page-build/node_modules",
 		"oF": 0
 		},
 	"/package-lock.json": {
@@ -332,7 +332,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/style/style-min.css",
 		"oF": 0,
 		"oS": 3
@@ -370,7 +370,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-pale",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 588069097.03762102
+	"lastBuiltDate": 588526852.81395304
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -665,7 +665,7 @@
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 0,
-	"buildFolderName": "build",
+	"buildFolderName": "one-page-build",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -1837,7 +1837,7 @@
 	"esLintSourceType": 0,
 	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
-	"hideConfigFile": 0,
+	"hideConfigFile": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {

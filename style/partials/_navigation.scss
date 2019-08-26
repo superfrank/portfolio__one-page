@@ -28,7 +28,7 @@
     font-size: $font-size-body;
     position: absolute;
     top: 16px;
-    right: 10px;
+    right: 0px;
 
     @include mq($from: tablet) {
     position: relative;
