@@ -85,46 +85,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/style/fonts/GT-Pressura-Bold-Italic.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Bold-Italic.otf",
-		"oF": 0
-		},
-	"/style/fonts/GT-Pressura-Bold.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Bold.otf",
-		"oF": 0
-		},
-	"/style/fonts/GT-Pressura-Light-Italic.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Light-Italic.otf",
-		"oF": 0
-		},
-	"/style/fonts/GT-Pressura-Light.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Light.otf",
-		"oF": 0
-		},
-	"/style/fonts/GT-Pressura-Regular-Italic.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Regular-Italic.otf",
-		"oF": 0
-		},
 	"/style/fonts/GT-Pressura-Regular.eot": {
 		"cB": 0,
 		"ft": 8192,

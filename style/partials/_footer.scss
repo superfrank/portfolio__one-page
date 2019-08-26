@@ -7,20 +7,11 @@
 
 .info__main {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  flex-direction: row-reverse;
 }
 
-.info__social {
-  a {
-    fill: white;
-    margin-right: 12px;
-  }
-}
 
 .contentinfo__copyright {
   font-size: $font-size-body;
   color: $white;
-  flex: 0 0 auto;
 }

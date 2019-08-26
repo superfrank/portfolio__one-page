@@ -71,6 +71,11 @@
     @include mq(wide) {
       max-width: 560px;
     }
+    a {
+      &:hover {
+        text-decoration: underline;
+    }
+    }
   }
 
   &__link {
