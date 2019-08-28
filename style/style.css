@@ -311,14 +311,23 @@ main {
   .project-list__number {
     text-align: right;
     line-height: 1.2; }
+  .project-list__copy-container {
+    position: relative; }
   .project-list__meta {
-    margin-top: 6px; }
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: -60px; }
+    @media all and (min-width: 30em) {
+      .project-list__meta {
+        left: -80px; } }
     @media all and (min-width: 46.25em) {
       .project-list__meta {
-        margin-top: 13px; } }
+        top: 4px; } }
   .project-list__description {
     max-width: 240px;
-    margin-bottom: 48px; }
+    margin-bottom: 48px;
+    position: relative; }
     @media all and (min-width: 46.25em) {
       .project-list__description {
         max-width: 460px; } }

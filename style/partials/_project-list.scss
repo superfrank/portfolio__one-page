@@ -55,16 +55,28 @@
     line-height: 1.2;
   }
 
+  &__copy-container {
+    position: relative;
+  }
+
   &__meta {
-    margin-top: 6px;
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: -60px;
+
+    @include mq(mobileLandscape) {
+      left: -80px;
+    }
     @include mq(tablet) {
-      margin-top: 13px;
+      top: 4px;
     }
   }
 
   &__description {
     max-width: 240px;
     margin-bottom: 48px;
+    position: relative;
     @include mq(tablet) {
       max-width: 460px;
     }
