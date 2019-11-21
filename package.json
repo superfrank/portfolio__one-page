@@ -1,14 +1,17 @@
 {
-  "name": "codekit-project",
+  "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "CodeKit created this starter package.json file. You should customize it appropriately.",
-  "scripts": {},
-  "author": "",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w style/ -o dist/css/ --recursive"
+  },
+  "author": "Frank Hulley-Jones",
   "license": "UNLICENSED",
   "repository": {},
   "dependencies": {
     "grunt": "^1.0.4",
     "handlebars": "^4.1.2",
-    "sass": "^1.22.10"
+    "node-sass": "^4.13.0"
   }
 }
