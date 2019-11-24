@@ -2,3 +2,4 @@ node_modules/
 .DS_Store
 .config.codekit3
 style/.DS_Store
+build
