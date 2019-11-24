@@ -62,50 +62,11 @@
   <body>
     <div id="one-page"></div>
     <script id="entry-template" type="text/x-handlebars-template">
-      <div class="featured-project">
-        <div class="featured-project__subheader">2019 — D&AD Wooden Pencil</div>
-        <a href="internet.html" class="project-list__header project-list__link">The internet, but not as we know it</a>
+      <div class="article">
+          <div class="article__header">
+              <img class="article__header-image" src="assets/images/internet-header.png"/>
+          </div>
       </div>
-        <ul class="project-list">
-        <div class="project-list__grid">
-          <div class="project-list__col-2 project-list__col-duo">
-            <h1 class="project-list__header">Frank Hulley-Jones<br />
-              <span class="title-alt">Designer, illustrator and developer for the Guardian Visuals team in London</span>
-            </h1>
-          </div>
-          <div class="project-list__col-2">
-            <h2 class="project-list__subheader">Selected Work</h2>
-          </div>
-          {{#each projects}}
-          <div class="project-list__col-1">
-            <div class="project-list__header project-list__number">{{inc @index}}</div>
-          </div>
-          <div class="project-list__col-2">
-                <li class="project-list__item" data-project-index="0">
-                  <a href="{{link}}" class="project-list__header project-list__link">{{name}}</a>
-                  <div class="project-list__copy-container">
-                  <div class="project-list__meta">{{#each meta}}{{@this}}</br>{{/each}}</div>
-                  <h2 class="project-list__description">{{{description}}}</h2>
-                  </div>
-                </li>
-          </div>
-          {{/each}}
-        </div>
-      </ul>
-      <div class="contact-me">
-        <div class="wrapper__background">
-        <h2 class="contact-heading">Get in touch</h2>
-        <a class="bg-link email-link" href="mailto:hello@tobefrank.co.uk" target="_blank">hello@tobefrank.co.uk</a>
-        </div>
-      </div>
-      <footer class="page-info">
-        <div class="wrapper__background">
-          <div class="info__main">
-              <p class="contentinfo__copyright">
-                <small>© <time>2019</time> Frank Hulley-Jones</small>
-              </p>
-            </div>
-        </div>
     </script>
   </body>
 </html>

@@ -17,6 +17,17 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/assets/images/internet-header.png": {
+		"ft": 32768,
+		"iS": 46944,
+		"oA": 0,
+		"oAP": "/assets/images/internet-header.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/handlebars-v4.1.2.js": {
 		"bF": 0,
 		"ft": 64,
@@ -35,6 +46,14 @@
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 1
+		},
+	"/internet.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/internet.html",
+		"oF": 0
 		},
 	"/js/app.js": {
 		"bF": 0,
@@ -165,6 +184,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/style/modules/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/style/partials/_article.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/style/partials/_article.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

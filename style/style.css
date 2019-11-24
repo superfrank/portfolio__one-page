@@ -350,6 +350,16 @@ main {
 .project-list__item {
   margin-bottom: 20px; }
 
+.article__header {
+  height: 600px;
+  width: 100vw;
+  background-color: #ff6c6a; }
+
+.article__header--image {
+  width: 100%;
+  height: auto;
+  display: block; }
+
 h1 {
   color: #ff6c6a;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
