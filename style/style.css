@@ -7,7 +7,7 @@
 
 .project-list__header {
   margin: 0;
-  color: #FF6C6A;
+  color: #ff6c6a;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   font-size: 30px;
   line-height: 1.2;
@@ -75,14 +75,14 @@ body {
   background-color: #f6f6f6; }
 
 a {
-  color: #FF6C6A;
+  color: #ff6c6a;
   text-decoration: none; }
   a:active {
     position: relative;
     top: 1px; }
 
 .bg-link {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none; }
   .bg-link:hover {
     background-image: linear-gradient(0deg, #FFFFFF 100%, #FFFFFF 0%);
@@ -143,7 +143,7 @@ main {
   background-color: white;
   width: 100%;
   height: 56px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
   top: 0px; }
   @media all and (min-width: 46.25em) {
     .page-head {
@@ -178,12 +178,12 @@ main {
     width: 79px;
     height: 32px; }
   .logo .logo__frame, .logo .logo__eyes {
-    fill: #FF6C6A; }
+    fill: #ff6c6a; }
   .logo .logo-type {
     display: none;
     font-family: "GT-Pressura-Regular", "Futura", sans-serif;
     font-size: 20px;
-    color: #FF6C6A;
+    color: #ff6c6a;
     text-decoration: none;
     margin-top: -6px; }
 
@@ -222,7 +222,7 @@ main {
       right: 10px; } }
   .site-nav__list .site-nav__item {
     display: inline;
-    color: #FF6C6A;
+    color: #ff6c6a;
     cursor: pointer;
     padding: 0;
     margin: 0 6px;
@@ -236,7 +236,7 @@ main {
 
 .page-info {
   margin: 0;
-  background-color: #FF6C6A;
+  background-color: #ff6c6a;
   text-align: left;
   display: block; }
 
@@ -246,13 +246,13 @@ main {
 
 .contentinfo__copyright {
   font-size: 16px;
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .contact-me {
   display: block;
   width: 100%;
-  background-color: #FF6C6A;
-  color: #FFFFFF;
+  background-color: #ff6c6a;
+  color: #ffffff;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   padding-top: 20px;
   padding-bottom: 24px;
@@ -339,10 +339,10 @@ main {
   .project-list__link {
     line-height: 1.2;
     transition: border 0.5s linear;
-    border-bottom: 2px solid #FF6C6A;
+    border-bottom: 2px solid #ff6c6a;
     border-bottom-color: transparent; }
     .project-list__link:hover {
-      border-bottom-color: #FF6C6A; }
+      border-bottom-color: #ff6c6a; }
 
 .title-alt {
   color: #121212; }
@@ -351,6 +351,6 @@ main {
   margin-bottom: 20px; }
 
 h1 {
-  color: #FF6C6A;
+  color: #ff6c6a;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   -webkit-font-smoothing: antialiased; }
