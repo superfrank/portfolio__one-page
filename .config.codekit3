@@ -81,25 +81,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/handlebars-v4.1.2.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/handlebars-v4.1.2-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/index.html",
-		"oF": 0
-		},
 	"/js/app.js": {
 		"bF": 0,
 		"ft": 64,
@@ -151,48 +132,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/style/fonts/GT-Pressura-Regular.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Regular.eot",
-		"oF": 0
-		},
-	"/style/fonts/GT-Pressura-Regular.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Regular.otf",
-		"oF": 0
-		},
-	"/style/fonts/GT-Pressura-Regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/style/fonts/GT-Pressura-Regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/style/fonts/GT-Pressura-Regular.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Regular.ttf",
-		"oF": 0
-		},
-	"/style/fonts/GT-Pressura-Regular.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/fonts/GT-Pressura-Regular.woff",
-		"oF": 0
 		},
 	"/style/modules/_colors.scss": {
 		"aP": 0,
