@@ -32,29 +32,6 @@
           </svg>
           <a class="logo-type">Frank Hulley-Jones</a>
         </h1>
-        <ul class="site-nav__list wrapper__background">
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link site-nav__home"
-              href="mailto:hello@tobefrank.co.uk"
-              >Email</a
-            >
-          </li>
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link site-nav__about"
-              href="https://www.instagram.com/tobefrank/"
-              >Instagram</a
-            >
-          </li>
-          <li class="site-nav__item">
-            <a
-              class="site-nav__link site-nav__contact"
-              href="https://twitter.com/tobefrankj"
-              >Twitter</a
-            >
-          </li>
-        </ul>
       </nav>
     </div>
   </header>
@@ -62,9 +39,11 @@
   <body>
     <div id="one-page"></div>
     <script id="entry-template" type="text/x-handlebars-template">
-      <div class="featured-project">
+      <div class="featured-project wrapper__background">
         <div class="featured-project__subheader">2019 — D&AD Wooden Pencil</div>
-        <a href="internet.html" class="project-list__header project-list__link">The internet, but not as we know it</a>
+        <a href="internet.html" class="featured-project__header">The internet,<br/>but not as we know it</a>
+        <img class="featured-project__image" src="assets/images/feature-image.png"/>
+        <div class="featured-project__block"></div>
       </div>
         <ul class="project-list">
         <div class="project-list__grid">
@@ -91,6 +70,29 @@
           </div>
           {{/each}}
         </div>
+      </ul>
+      <ul class="site-nav__list wrapper__background">
+        <li class="site-nav__item">
+          <a
+            class="site-nav__link site-nav__home"
+            href="mailto:hello@tobefrank.co.uk"
+            >Email</a
+          >
+        </li>
+        <li class="site-nav__item">
+          <a
+            class="site-nav__link site-nav__about"
+            href="https://www.instagram.com/tobefrank/"
+            >Instagram</a
+          >
+        </li>
+        <li class="site-nav__item">
+          <a
+            class="site-nav__link site-nav__contact"
+            href="https://twitter.com/tobefrankj"
+            >Twitter</a
+          >
+        </li>
       </ul>
       <div class="contact-me">
         <div class="wrapper__background">

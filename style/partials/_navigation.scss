@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: white;
+  background-color: #f6f6f6;
   display: block;
 
   @include mq($from: tablet) {
@@ -11,52 +11,43 @@
   }
 
   @include mq($from: desktop) {
-      max-width: 980px;
+    max-width: 980px;
   }
   @include mq($from: wide) {
-      max-width: 1300px;
+    max-width: 1300px;
   }
 }
 
-
-
-
 .site-nav__list {
-    margin: 0;
-    list-style: none;
-    font-family: $sans-serif;
-    font-size: $font-size-body;
-    position: absolute;
-    top: 16px;
-    right: 0px;
+  margin: 0;
+  list-style: none;
+  font-family: $sans-serif;
+  font-size: $font-size-body;
 
-    @include mq($from: tablet) {
+  @include mq($from: tablet) {
     position: relative;
     margin-top: -66px;
     display: block;
     font-size: $font-size-medium;
     top: 10px;
     right: 10px;
+  }
+
+  .site-nav__item {
+    display: inline;
+    color: $brand-1;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 6px;
+    border-bottom: none;
+
+    @include mq($from: tablet) {
+      margin: 0 8px;
+      text-align: left;
     }
 
-
-    .site-nav__item {
-        display: inline;
-        color: $brand-1;
-        cursor: pointer;
-        padding: 0;
-        margin: 0 6px;
-        border-bottom: none;
-
-        @include mq($from: tablet) {
-        margin: 0 8px;
-        text-align: left;
-        }
-
-        &:hover {
-            text-decoration: underline;
-        }
-
+    &:hover {
+      text-decoration: underline;
     }
-
+  }
 }

@@ -1,0 +1,22 @@
+.featured-project {
+  &__header {
+    font-size: 80px;
+    line-height: 80px;
+    color: $black;
+  }
+  &__subheader {
+    color: $dark-grey;
+    font-family: $sans-serif;
+    font-size: $font-size-body;
+    line-height: $line-height;
+    font-weight: normal;
+
+    @include mq(tablet) {
+      font-size: 30px;
+    }
+  }
+  &__image {
+    max-width: 740px;
+    float: right;
+  }
+}

@@ -1,8 +1,7 @@
 .page-head {
-  background-color: white;
+  background-color: $off-white;
   width: 100%;
   height: 56px;
-  border-bottom: 1px solid $light-grey;
   top: 0px;
 
   @include mq(tablet) {
@@ -11,11 +10,11 @@
 }
 
 .site-nav {
-    display: flex;
-    justify-content: center;
-    z-index: 10;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $off-white;
 }
