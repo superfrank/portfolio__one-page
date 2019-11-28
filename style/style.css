@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'GT-Pressura-Regular';
+  font-family: "GT-Pressura-Regular";
   src: url("fonts/lineto-circular-pro-book.eot");
   src: url("fonts/GT-Pressura-Regular.woff") format("woff"), url("fonts/GT-Pressura-Regular.ttf") format("truetype"), url("fonts/GT-Pressura-Regular.svg") format("svg");
   font-weight: normal;
@@ -9,7 +9,7 @@
   margin: 0;
   color: #ff6c6a;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 30px;
+  font-size: 4rem;
   line-height: 1.2;
   font-weight: normal; }
   @media all and (min-width: 46.25em) {
@@ -17,34 +17,34 @@
       font-size: 46px; } }
   @media all and (min-width: 61.25em) {
     .project-list__header {
-      font-size: 60px; } }
+      font-size: 6rem; } }
 
 p,
 .paragraph {
   margin-bottom: 12px;
   color: #666666;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 2.6rem; }
 
 .project-list__subheader {
   color: #121212;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.2;
   font-weight: normal; }
   @media all and (min-width: 46.25em) {
     .project-list__subheader {
-      font-size: 20px; } }
+      font-size: 2rem; } }
 
 .project-list__description {
   color: #121212;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.2;
   font-weight: normal; }
   @media all and (min-width: 46.25em) {
     .project-list__description {
-      font-size: 20px; } }
+      font-size: 2rem; } }
 
 .project-list__meta {
   color: #666666;
@@ -58,7 +58,7 @@ p,
       font-size: 9px; } }
   @media all and (min-width: 30em) {
     .project-list__meta {
-      font-size: 12px; } }
+      font-size: 1.2rem; } }
 
 html {
   box-sizing: border-box;
@@ -186,21 +186,30 @@ main {
   .logo .logo-type {
     display: none;
     font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     color: #ff6c6a;
     text-decoration: none;
     margin-top: -6px; }
 
-.site-nav {
-  height: 56px;
-  margin: 0;
-  padding: 0;
+.page-head {
+  background-color: #fcfcfc;
   width: 100%;
-  background-color: #f6f6f6;
-  display: block; }
+  height: 56px;
+  top: 0px; }
   @media all and (min-width: 46.25em) {
-    .site-nav {
-      background-color: white; } }
+    .page-head {
+      height: 80px; } }
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fcfcfc;
+  height: 56px;
+  display: block; }
   @media all and (min-width: 61.25em) {
     .site-nav {
       max-width: 980px; } }
@@ -212,13 +221,13 @@ main {
   margin: 0;
   list-style: none;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 16px; }
+  font-size: 1.6rem; }
   @media all and (min-width: 46.25em) {
     .site-nav__list {
       position: relative;
       margin-top: -66px;
       display: block;
-      font-size: 20px;
+      font-size: 2rem;
       top: 10px;
       right: 10px; } }
   .site-nav__list .site-nav__item {
@@ -246,7 +255,7 @@ main {
   flex-direction: row-reverse; }
 
 .contentinfo__copyright {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #ffffff; }
 
 .contact-me {
@@ -262,10 +271,10 @@ main {
   -o-transition-duration: 300ms;
   transition-duration: 300ms; }
   .contact-me .contact-heading {
-    font-size: 20px;
+    font-size: 2rem;
     margin: 0px; }
   .contact-me .email-link {
-    font-size: 30px; }
+    font-size: 4rem; }
 
 .project-list {
   display: flex;
@@ -351,24 +360,40 @@ main {
 .project-list__item {
   margin-bottom: 20px; }
 
+.featured-project__image-wrapper {
+  display: grid;
+  position: relative; }
+
+.featured-project__image {
+  max-width: 90%;
+  justify-self: center; }
+  @media all and (min-width: 81.25em) {
+    .featured-project__image {
+      max-width: 740px;
+      float: right; } }
+
+.featured-project__block {
+  width: 100%;
+  height: 60%;
+  background-color: #ff6c6a;
+  position: absolute;
+  align-self: center;
+  z-index: -1; }
+
 .featured-project__header {
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 1rem;
+  font-size: 4rem;
+  line-height: 1.2;
   color: #121212; }
 
 .featured-project__subheader {
   color: #666666;
-  font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.2;
-  font-weight: normal; }
+  margin-top: 1rem; }
   @media all and (min-width: 46.25em) {
     .featured-project__subheader {
       font-size: 30px; } }
-
-.featured-project__image {
-  max-width: 740px;
-  float: right; }
 
 .article__header {
   height: 600px;

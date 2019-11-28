@@ -40,18 +40,15 @@
     <div id="one-page"></div>
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="featured-project wrapper__background">
+        <div class="featured-project__image-wrapper">
+          <img class="featured-project__image" src="assets/images/feature-image.png"/>
+          <div class="featured-project__block"></div>
+        </div>
         <div class="featured-project__subheader">2019 — D&AD Wooden Pencil</div>
         <a href="internet.html" class="featured-project__header">The internet,<br/>but not as we know it</a>
-        <img class="featured-project__image" src="assets/images/feature-image.png"/>
-        <div class="featured-project__block"></div>
       </div>
         <ul class="project-list">
         <div class="project-list__grid">
-          <div class="project-list__col-2 project-list__col-duo">
-            <h1 class="project-list__header">Frank Hulley-Jones<br />
-              <span class="title-alt">Designer, illustrator and developer for the Guardian Visuals team in London</span>
-            </h1>
-          </div>
           <div class="project-list__col-2">
             <h2 class="project-list__subheader">Selected Work</h2>
           </div>
@@ -69,6 +66,11 @@
                 </li>
           </div>
           {{/each}}
+          <div class="project-list__col-2 project-list__col-duo">
+              <h1 class="project-list__header">Frank Hulley-Jones<br />
+                <span class="title-alt">Designer, illustrator and developer for the Guardian Visuals team in London</span>
+              </h1>
+            </div>
         </div>
       </ul>
       <ul class="site-nav__list wrapper__background">
