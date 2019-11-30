@@ -32,11 +32,32 @@
       // animation: spin 8s infinite linear;
     }
   }
+  &__arrow {
+    display: block;
+    position: absolute;
+    bottom: -52px;
+    right: 0px;
+    height: 84px;
+    width: 8px;
+  }
   &__header {
     font-size: 1rem;
     font-size: $font-size-large;
     line-height: $line-height;
     color: $black;
+    position: relative;
+    display: block;
+
+    &:before {
+      content: '';
+      border-top: 1px solid $black;
+      width: calc(100% + 6px);
+      height: 1px;
+      display: block;
+      position: absolute;
+      top:-26px;
+      left: -10px;
+    }
   }
   &__subheader {
     color: $dark-grey;
@@ -47,18 +68,16 @@
     display: block;
     width: 100%;
      
-    &:before {
-      content: '';
-      border-top: 1px solid $black;
-      width: calc(100% + 10px);
-      height: 1px;
-      display: block;
-      position: absolute;
-      top:-8px;
-      left: -10px;
-      // margin-left: -10px;
-      // padding-top: -4px;
-    }
+    // &:before {
+    //   content: '';
+    //   background: $black;
+    //   width: 1px;
+    //   height: 100px;
+    //   display: block;
+    //   position: absolute;
+    //   top:-86px;
+    //   right: 3px;
+    // }
 
     @include mq(tablet) {
       font-size: 30px;
