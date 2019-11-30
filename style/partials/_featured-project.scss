@@ -2,14 +2,14 @@
   &__image-wrapper {
     display: grid;
     position: relative;
+    max-width: 780px;
   }
   &__image {
     max-width: 90%;
     justify-self: center;
 
     @include mq(wide) {
-      max-width: 740px;
-      float: right;
+      max-width: 672px;
     }
   }
   &__block {
@@ -32,13 +32,35 @@
       // animation: spin 8s infinite linear;
     }
   }
-  &__arrow {
+  &__arrow--line {
     display: block;
     position: absolute;
     bottom: -52px;
     right: 0px;
     height: 84px;
     width: 8px;
+    @include mq(tablet) {
+      height: 168px;
+      width: 16px;
+      bottom: -72px;
+    }
+  }
+  &__arrow--top {
+    display: block;
+    position: absolute;
+    bottom: -44px;
+    right: 0px;
+    height: 84px;
+    width: 8px;
+    svg {
+      // animation: arrow 5s infinite linear;
+    }
+   
+    @include mq(tablet) {
+      height: 168px;
+      width: 16px;
+      bottom: -72px;
+    }
   }
   &__header {
     font-size: 1rem;
@@ -89,3 +111,11 @@
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
 }
+
+
+@keyframes arrow {
+    5%  {margin-top: -10px;}
+    10%  {margin-top: 0px;}
+    100% {margin-top: 0px;}
+}
+
