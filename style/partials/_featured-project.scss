@@ -2,7 +2,9 @@
   &__image-wrapper {
     display: grid;
     position: relative;
+    @include mq(wide) {
     max-width: 780px;
+    }
   }
   &__image {
     max-width: 90%;
@@ -24,8 +26,17 @@
     position: absolute;
     bottom: -40px;
     right: 20%;
-    max-height:80px;
-    max-width:80px;
+    max-height:8rem;
+    max-width:8rem;
+
+    @include mq(tablet) {
+      max-height: 10rem;
+      max-wdith: 10rem;
+      svg {
+        height: 10rem;
+        width: 10rem;
+      }
+    }
 
     
     svg {
@@ -63,23 +74,8 @@
     }
   }
   &__header {
-    font-size: 1rem;
-    font-size: $font-size-large;
-    line-height: $line-height;
-    color: $black;
     position: relative;
     display: block;
-
-    &:before {
-      content: '';
-      border-top: 1px solid $black;
-      width: calc(100% + 6px);
-      height: 1px;
-      display: block;
-      position: absolute;
-      top:-26px;
-      left: -10px;
-    }
   }
   &__subheader {
     color: $dark-grey;
@@ -89,17 +85,25 @@
     position: relative;
     display: block;
     width: 100%;
+    @include mq(tablet) {
+      margin-top: 7.8rem;
+    }
      
-    // &:before {
-    //   content: '';
-    //   background: $black;
-    //   width: 1px;
-    //   height: 100px;
-    //   display: block;
-    //   position: absolute;
-    //   top:-86px;
-    //   right: 3px;
-    // }
+    &:before {
+      content: '';
+      border-top: 1px solid $black;
+      width: calc(100% + 6px);
+      height: 1px;
+      display: block;
+      position: absolute;
+      top:-26px;
+      left: -10px;
+      @include mq(tablet) {
+        border-top: 2px solid $black;
+        left:-20px;
+        top: -16px;
+      }
+    }
 
     @include mq(tablet) {
       font-size: 30px;

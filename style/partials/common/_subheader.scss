@@ -6,6 +6,6 @@
     font-weight: normal;
 
     @include mq(tablet) {
-      font-size: $font-size-medium;
+      font-size: $font-size-small;
     }
 }
