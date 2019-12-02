@@ -3,7 +3,7 @@
     display: grid;
     position: relative;
     @include mq(wide) {
-    max-width: 780px;
+      max-width: 780px;
     }
   }
   &__image {
@@ -26,19 +26,20 @@
     position: absolute;
     bottom: -40px;
     right: 20%;
-    max-height:8rem;
-    max-width:8rem;
+    height: 8rem;
+    width: 8rem;
 
     @include mq(tablet) {
-      max-height: 10rem;
-      max-wdith: 10rem;
+      bottom: -42px;
+      right: 18%;
+      height: 10rem;
+      width: 10rem;
       svg {
-        height: 10rem;
+        height: auto;
         width: 10rem;
       }
     }
 
-    
     svg {
       // animation: spin 8s infinite linear;
     }
@@ -51,9 +52,11 @@
     height: 84px;
     width: 8px;
     @include mq(tablet) {
-      height: 168px;
+      height: 120px;
       width: 16px;
-      bottom: -72px;
+      bottom: -64px;
+      right: -8px;
+      overflow: hidden;
     }
   }
   &__arrow--top {
@@ -64,13 +67,14 @@
     height: 84px;
     width: 8px;
     svg {
-      // animation: arrow 5s infinite linear;
+      animation: arrow 5s infinite linear;
     }
-   
+
     @include mq(tablet) {
       height: 168px;
       width: 16px;
-      bottom: -72px;
+      bottom: -80px;
+      right: -8px;
     }
   }
   &__header {
@@ -88,20 +92,25 @@
     @include mq(tablet) {
       margin-top: 7.8rem;
     }
-     
+
     &:before {
-      content: '';
+      content: "";
       border-top: 1px solid $black;
       width: calc(100% + 6px);
       height: 1px;
       display: block;
       position: absolute;
-      top:-26px;
+      top: -9px;
       left: -10px;
       @include mq(tablet) {
         border-top: 2px solid $black;
-        left:-20px;
-        top: -16px;
+        left: -20px;
+        width: calc(100% + 20px);
+        top: -1.6rem;
+      }
+      @include mq(desktop) {
+        left: -10px;
+        width: calc(100% + 10px);
       }
     }
 
@@ -112,14 +121,22 @@
 }
 
 @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 
 @keyframes arrow {
-    5%  {margin-top: -10px;}
-    10%  {margin-top: 0px;}
-    100% {margin-top: 0px;}
+  5% {
+    margin-top: -10px;
+  }
+  10% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
 }
-

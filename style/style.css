@@ -376,14 +376,16 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: -40px;
   right: 20%;
-  max-height: 8rem;
-  max-width: 8rem; }
+  height: 8rem;
+  width: 8rem; }
   @media all and (min-width: 46.25em) {
     .featured-project__circle {
-      max-height: 10rem;
-      max-wdith: 10rem; }
+      bottom: -42px;
+      right: 18%;
+      height: 10rem;
+      width: 10rem; }
       .featured-project__circle svg {
-        height: 10rem;
+        height: auto;
         width: 10rem; } }
 
 .featured-project__arrow--line {
@@ -395,9 +397,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 8px; }
   @media all and (min-width: 46.25em) {
     .featured-project__arrow--line {
-      height: 168px;
+      height: 120px;
       width: 16px;
-      bottom: -72px; } }
+      bottom: -64px;
+      right: -8px;
+      overflow: hidden; } }
 
 .featured-project__arrow--top {
   display: block;
@@ -406,11 +410,14 @@ h1, h2, h3, h4, h5, h6 {
   right: 0px;
   height: 84px;
   width: 8px; }
+  .featured-project__arrow--top svg {
+    animation: arrow 5s infinite linear; }
   @media all and (min-width: 46.25em) {
     .featured-project__arrow--top {
       height: 168px;
       width: 16px;
-      bottom: -72px; } }
+      bottom: -80px;
+      right: -8px; } }
 
 .featured-project__header {
   position: relative;
@@ -428,19 +435,24 @@ h1, h2, h3, h4, h5, h6 {
     .featured-project__subheader {
       margin-top: 7.8rem; } }
   .featured-project__subheader:before {
-    content: '';
+    content: "";
     border-top: 1px solid #121212;
     width: calc(100% + 6px);
     height: 1px;
     display: block;
     position: absolute;
-    top: -26px;
+    top: -9px;
     left: -10px; }
     @media all and (min-width: 46.25em) {
       .featured-project__subheader:before {
         border-top: 2px solid #121212;
         left: -20px;
-        top: -16px; } }
+        width: calc(100% + 20px);
+        top: -1.6rem; } }
+    @media all and (min-width: 61.25em) {
+      .featured-project__subheader:before {
+        left: -10px;
+        width: calc(100% + 10px); } }
   @media all and (min-width: 46.25em) {
     .featured-project__subheader {
       font-size: 30px; } }
