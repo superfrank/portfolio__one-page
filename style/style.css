@@ -10,14 +10,14 @@ h2 {
   color: #121212;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   font-size: 4rem;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: normal; }
   @media all and (min-width: 46.25em) {
     h2 {
       font-size: 6rem; } }
   @media all and (min-width: 61.25em) {
     h2 {
-      font-size: 8rem; } }
+      font-size: 5vw; } }
 
 p,
 .paragraph {
@@ -73,7 +73,8 @@ body {
   margin: 0px;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background-color: #fcfcfc; }
 
 a {
   color: #ff6c6a;
@@ -86,7 +87,7 @@ a {
   color: #ffffff;
   text-decoration: none; }
   .bg-link:hover {
-    background-image: linear-gradient(0deg, #ffffff 100%, #ffffff 0%);
+    background-image: linear-gradient(0deg, #ff6c6a 100%, #ff6c6a 0%);
     background-repeat: repeat-x;
     background-position: 0 92%;
     background-color: transparent;
@@ -138,13 +139,18 @@ main {
       padding-right: 5%; } }
 
 ::selection {
-  background-color: yellow;
-  color: #666666; }
+  background-color: #121212;
+  color: #ffffff; }
 
 .project-title {
   color: black !important; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: normal; }
 
@@ -357,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative; }
     @media all and (min-width: 81.25em) {
       .featured-project__image-wrapper {
-        width: 780px;
+        width: 60%;
         justify-self: end; } }
   .featured-project__image {
     max-width: 90%;
@@ -421,7 +427,8 @@ h1, h2, h3, h4, h5, h6 {
         right: -8px; } }
   @media all and (min-width: 81.25em) {
     .featured-project__title {
-      margin-top: -160px; } }
+      margin-top: -160px;
+      width: 50%; } }
   .featured-project__header {
     position: relative;
     display: block; }
@@ -435,7 +442,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; }
     @media all and (min-width: 46.25em) {
       .featured-project__subheader {
-        margin-top: 7.8rem; } }
+        margin-top: 7.8rem;
+        font-size: 2vw; } }
     .featured-project__subheader:before {
       content: "";
       border-top: 1px solid #121212;
@@ -454,10 +462,7 @@ h1, h2, h3, h4, h5, h6 {
       @media all and (min-width: 61.25em) {
         .featured-project__subheader:before {
           left: 0px;
-          width: calc(100%); } }
-    @media all and (min-width: 46.25em) {
-      .featured-project__subheader {
-        font-size: 30px; } }
+          width: calc(75%); } }
 
 @keyframes spin {
   from {
