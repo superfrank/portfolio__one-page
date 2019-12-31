@@ -3,7 +3,7 @@
   &__image-wrapper {
     display: grid;
     position: relative;
-    @include mq(wide) {
+    @include mq(desktop) {
       width: 60%;
       justify-self: end;
     }
@@ -11,6 +11,23 @@
   &__image {
     max-width: 90%;
     justify-self: center;
+
+    @include mq(desktop) {
+      max-width: 500px;
+    }
+
+    @include mq(wide) {
+      max-width: 672px;
+    }
+  }
+  &__image-group {
+    display: grid;
+    position: relative;
+    justify-self: center;
+    max-width: 90%;
+    @include mq(desktop) {
+      max-width: 500px;
+    }
 
     @include mq(wide) {
       max-width: 672px;
@@ -23,6 +40,9 @@
     position: absolute;
     align-self: center;
     z-index: -1;
+    @include mq(desktop) {
+      height: 60%;
+    }
     @include mq(wide) {
       height: 360px;
     }
@@ -36,12 +56,18 @@
 
     @include mq(tablet) {
       bottom: -42px;
-      right: 18%;
+      // right: calc(18%);
       height: 10rem;
       width: 10rem;
       svg {
         height: auto;
         width: 10rem;
+      }
+      @include mq(desktop) {
+        right: 6rem;
+      }
+      @include mq(wide) {
+        right: 10rem;
       }
     }
 
@@ -63,6 +89,9 @@
       right: -8px;
       overflow: hidden;
     }
+    @include mq(desktop) {
+      display: none;
+    }
   }
   &__arrow--top {
     display: block;
@@ -81,10 +110,22 @@
       bottom: -80px;
       right: -8px;
     }
+    @include mq(desktop) {
+      bottom: 0px;
+      left: -104px;
+      transform: rotate(90deg);
+    }
+    @include mq(wide) {
+      bottom: 12px;
+    }
   }
   &__title {
+    @include mq(desktop) {
+      margin-top: -153px;
+      width: 50%;
+    }
     @include mq(wide) {
-      margin-top: -160px;
+      margin-top: -165px;
       width: 50%;
     }
   }
@@ -117,11 +158,17 @@
         border-top: 2px solid $black;
         left: -20px;
         width: calc(100% + 20px);
-        top: -1.6rem;
+        top: -1rem;
       }
       @include mq(desktop) {
         left: 0px;
         width: calc(75%);
+        top: -1rem;
+      }
+      @include mq(wide) {
+        left: 0px;
+        width: calc(78%);
+        top: -1rem;
       }
     }
   }
