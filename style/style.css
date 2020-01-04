@@ -9,12 +9,9 @@ h2 {
   margin: 0;
   color: #121212;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 4rem;
+  font-size: 10vw;
   line-height: 1;
   font-weight: normal; }
-  @media all and (min-width: 46.25em) {
-    h2 {
-      font-size: 6rem; } }
   @media all and (min-width: 61.25em) {
     h2 {
       font-size: 5vw; } }
@@ -273,75 +270,47 @@ h6 {
 
 .project-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 10px;
   list-style: none;
-  margin-top: 10px;
-  margin-bottom: 100px; }
-  @media all and (min-width: 23.4375em) {
+  margin-bottom: 100px;
+  margin-top: calc(10vw + 80px); }
+  @media all and (min-width: 46.25em) {
     .project-list {
-      margin-top: 16px; } }
-  @media all and (min-width: 30em) {
-    .project-list {
-      padding: 0 20px; } }
+      margin-top: calc(10vw + 80px); } }
   .project-list__grid {
     display: grid;
-    grid-template-columns: 50px auto;
-    grid-column-gap: 20px;
-    width: 100%; }
-    @media all and (min-width: 30em) {
-      .project-list__grid {
-        grid-template-columns: 90px auto; } }
+    width: 100%;
+    grid-template-columns: 40% 60%; }
+  .project-list__col-1 {
+    display: block;
+    position: relative;
+    justify-self: start;
+    grid-column: span 2;
+    margin-top: -10vw; }
     @media all and (min-width: 46.25em) {
-      .project-list__grid {
-        max-width: 740px; } }
-    @media all and (min-width: 81.25em) {
-      .project-list__grid {
-        max-width: 860px; } }
+      .project-list__col-1 {
+        justify-self: end;
+        grid-column: span 1; } }
   .project-list__col-2 {
-    grid-column: 2; }
-  .project-list__col-duo {
-    grid-column: 1 / span 2; }
-    @media all and (min-width: 23.4375em) {
-      .project-list__col-duo {
-        padding: 0 6px; } }
-    @media all and (min-width: 30em) {
-      .project-list__col-duo {
-        grid-column: 2 / span 1;
-        padding: 0; } }
-  .project-list__subheader {
-    margin-top: 56px; }
+    display: grid;
+    grid-template-columns: auto;
+    align-self: end;
+    position: relative;
+    grid-column: span 2; }
+    @media all and (min-width: 46.25em) {
+      .project-list__col-2 {
+        justify-self: center;
+        grid-column: 2 / span 1; } }
+  .project-list__item {
+    width: 100%; }
+    @media all and (min-width: 61.25em) {
+      .project-list__item {
+        width: 500px; } }
+    @media all and (min-width: 81.25em) {
+      .project-list__item {
+        width: 672px; } }
   .project-list__number {
     text-align: right;
-    line-height: 1.2;
     color: #ff6c6a; }
-  .project-list__copy-container {
-    position: relative; }
-  .project-list__meta {
-    position: absolute;
-    display: block;
-    top: 2px;
-    left: -60px; }
-    @media all and (min-width: 30em) {
-      .project-list__meta {
-        left: -80px; } }
-    @media all and (min-width: 46.25em) {
-      .project-list__meta {
-        top: 4px; } }
-  .project-list__description {
-    max-width: 240px;
-    margin-bottom: 48px;
-    position: relative; }
-    @media all and (min-width: 46.25em) {
-      .project-list__description {
-        max-width: 460px; } }
-    @media all and (min-width: 81.25em) {
-      .project-list__description {
-        max-width: 560px; } }
-    .project-list__description a:hover {
-      text-decoration: underline; }
   .project-list__link {
     line-height: 1.2;
     transition: border 0.5s linear;
@@ -538,15 +507,16 @@ h6 {
 
 .animate.backwards > span {
   animation: animateBackwards 1s ease-in-out forwards;
+  margin-left: 0px;
   color: #ff6c6a; }
 
 .animate.forwards > span {
-  margin-left: 2em;
+  margin-right: -2em;
   animation: animateForwards 1s ease-in-out forwards;
   color: #ff6c6a; }
 
 .animate.mixed > span {
-  margin-bottom: 1em; }
+  margin-bottom: calc(10vw + 10px); }
 
 .animate.mixed > span {
   animation: animateMixed 1s ease-in-out forwards; }
@@ -556,7 +526,7 @@ h6 {
     top: 0;
     transform: rotate(0deg); }
   to {
-    top: 1em;
+    top: calc(5vw + 20px);
     transform: rotate(15deg); } }
 
 @keyframes animateBackwards {
@@ -564,14 +534,14 @@ h6 {
     top: 0;
     transform: rotate(0deg); }
   to {
-    top: 1em;
+    top: calc(5vw + 20px);
     transform: rotate(-15deg); } }
 
 @keyframes animateMixed {
   from {
     top: 0; }
   to {
-    top: 1em; } }
+    top: calc(5vw + 20px); } }
 
 h1 {
   color: #ff6c6a;

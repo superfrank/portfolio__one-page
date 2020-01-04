@@ -6,16 +6,17 @@
 
 .animate.backwards > span {
   animation: animateBackwards 1s ease-in-out forwards;
+  margin-left: 0px;
   color: $brand-1;
 }
 .animate.forwards > span {
-  margin-left: 2em;
+  margin-right: -2em;
   animation: animateForwards 1s ease-in-out forwards;
   color: $brand-1;
 }
 .animate.mixed > span {
   //   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: calc(10vw + 10px);
 }
 
 .animate.mixed > span {
@@ -28,7 +29,7 @@
     transform: rotate(0deg);
   }
   to {
-    top: 1em;
+    top: calc(5vw + 20px);
     transform: rotate(15deg);
   }
 }
@@ -38,7 +39,7 @@
     transform: rotate(0deg);
   }
   to {
-    top: 1em;
+    top: calc(5vw + 20px);
     transform: rotate(-15deg);
   }
 }
@@ -48,6 +49,6 @@
     top: 0;
   }
   to {
-    top: 1em;
+    top: calc(5vw + 20px);
   }
 }
