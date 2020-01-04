@@ -1,12 +1,9 @@
 .project-list {
   display: flex;
   list-style: none;
-  margin-bottom: 100px;
   margin-top: calc(10vw + 80px);
+  margin-bottom: calc(10vw + 80px);
 
-  @include mq(tablet) {
-    margin-top: calc(10vw + 80px);
-  }
   &__grid {
     display: grid;
     width: 100%;
@@ -17,7 +14,7 @@
     position: relative;
     justify-self: start;
     grid-column: span 2;
-    @include mq(tablet) {
+    @include mq(desktop) {
       justify-self: end;
       grid-column: span 1;
     }
@@ -30,7 +27,7 @@
     // max-width: 672px;
     position: relative;
     grid-column: span 2;
-    @include mq(tablet) {
+    @include mq(desktop) {
       justify-self: center;
       grid-column: 2 / span 1;
     }
