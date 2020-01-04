@@ -6,6 +6,6 @@ h2 {
   line-height: 1;
   font-weight: normal;
   @include mq(desktop) {
-    font-size: $font-size-extralarge;
+    font-size: $font-size-five;
   }
 }

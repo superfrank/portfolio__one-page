@@ -32,13 +32,13 @@
   margin: 0;
   list-style: none;
   font-family: $sans-serif;
-  font-size: $font-size-body;
+  font-size: $font-size-three;
 
-  @include mq($from: tablet) {
+  @include mq(desktop) {
     position: relative;
     margin-top: -66px;
     display: block;
-    font-size: $font-size-medium;
+    font-size: $font-size-two;
     top: 10px;
     right: 10px;
   }

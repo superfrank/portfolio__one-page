@@ -134,16 +134,12 @@
     display: block;
   }
   &__subheader {
-    color: $dark-grey;
-    font-size: $font-size-body;
-    line-height: $line-height;
     margin-top: 5.8rem;
     position: relative;
     display: block;
     width: 100%;
     @include mq(tablet) {
       margin-top: 7.8rem;
-      font-size: 2vw;
     }
     &:before {
       content: "";
