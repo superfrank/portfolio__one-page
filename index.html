@@ -55,13 +55,15 @@
         </div>
         <div class="featured-project__title">
           <h3 class="featured-project__subheader">2019 — D&AD Wooden Pencil</h3>
-          <a href="internet.html"><h2 class="featured-project__header">The internet,<br/>but not as we know it</h2></a>
+          <a href="internet.html"><h2 class="featured-project__header">The internet,<br/>but not as we know&nbsp;it</h2></a>
         </div>
       </div>
         <ul class="project-list">
         <div class="project-list__grid">
           <div class="project-list__col-2">
-            <h3 class="project-list__subheader">Selected Work</h3>
+            <h2 class="animate backwards">Selected</h2>
+            <h2 class="animate forwards">Work</h2>
+            <h2 class="animate mixed">‘17—‘20</h2>
           </div>
           {{#each projects}}
           <div class="project-list__col-1">
@@ -71,8 +73,6 @@
                 <li class="project-list__item" data-project-index="0">
                   <a href="{{link}}" class="project-list__header project-list__link"><h2 class="featured-project__header">{{name}}</h2></a>
                   <div class="project-list__copy-container">
-                  <div class="project-list__meta">{{#each meta}}{{@this}}</br>{{/each}}</div>
-                  <h3 class="project-list__description">{{{description}}}</h3>
                   </div>
                 </li>
           </div>

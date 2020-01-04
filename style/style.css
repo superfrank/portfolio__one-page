@@ -531,6 +531,48 @@ h6 {
   height: auto;
   display: block; }
 
+.animate span {
+  display: block;
+  position: relative;
+  text-align: center; }
+
+.animate.backwards > span {
+  animation: animateBackwards 1s ease-in-out forwards;
+  color: #ff6c6a; }
+
+.animate.forwards > span {
+  margin-left: 2em;
+  animation: animateForwards 1s ease-in-out forwards;
+  color: #ff6c6a; }
+
+.animate.mixed > span {
+  margin-bottom: 1em; }
+
+.animate.mixed > span {
+  animation: animateMixed 1s ease-in-out forwards; }
+
+@keyframes animateForwards {
+  from {
+    top: 0;
+    transform: rotate(0deg); }
+  to {
+    top: 1em;
+    transform: rotate(15deg); } }
+
+@keyframes animateBackwards {
+  from {
+    top: 0;
+    transform: rotate(0deg); }
+  to {
+    top: 1em;
+    transform: rotate(-15deg); } }
+
+@keyframes animateMixed {
+  from {
+    top: 0; }
+  to {
+    top: 1em; } }
+
 h1 {
   color: #ff6c6a;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
