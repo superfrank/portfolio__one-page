@@ -21,7 +21,7 @@
       justify-self: end;
       grid-column: span 1;
     }
-    margin-top: -10vw;
+    margin-top: -8.5vw;
   }
   &__col-2 {
     display: grid;
@@ -68,6 +68,10 @@
       // background-image: linear-gradient(0deg,$brand-1 100%,$brand-1 0%);
     }
   }
+
+  .featured-project__header {
+    line-height: 1.6;
+  }
 }
 
 .title-alt {
@@ -75,5 +79,5 @@
 }
 
 .project-list__item {
-  margin-bottom: 20px;
+  // margin-bottom: 3vw;
 }

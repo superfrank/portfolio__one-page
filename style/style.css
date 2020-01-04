@@ -284,7 +284,7 @@ h6 {
     position: relative;
     justify-self: start;
     grid-column: span 2;
-    margin-top: -10vw; }
+    margin-top: -8.5vw; }
     @media all and (min-width: 46.25em) {
       .project-list__col-1 {
         justify-self: end;
@@ -317,12 +317,11 @@ h6 {
     border-bottom-color: transparent; }
     .project-list__link:hover {
       border-bottom-color: #ff6c6a; }
+  .project-list .featured-project__header {
+    line-height: 1.6; }
 
 .title-alt {
   color: #121212; }
-
-.project-list__item {
-  margin-bottom: 20px; }
 
 .featured-project {
   display: grid; }
@@ -521,7 +520,7 @@ h6 {
     top: 0;
     transform: rotate(0deg); }
   to {
-    top: calc(5vw + 20px);
+    top: calc(8vw);
     transform: rotate(15deg); } }
 
 @keyframes animateBackwards {
@@ -529,14 +528,14 @@ h6 {
     top: 0;
     transform: rotate(0deg); }
   to {
-    top: calc(5vw + 20px);
+    top: calc(8vw);
     transform: rotate(-15deg); } }
 
 @keyframes animateMixed {
   from {
     top: 0; }
   to {
-    top: calc(5vw + 20px); } }
+    top: calc(8vw); } }
 
 h1 {
   color: #ff6c6a;

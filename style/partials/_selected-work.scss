@@ -29,7 +29,7 @@
     transform: rotate(0deg);
   }
   to {
-    top: calc(5vw + 20px);
+    top: calc(8vw);
     transform: rotate(15deg);
   }
 }
@@ -39,7 +39,7 @@
     transform: rotate(0deg);
   }
   to {
-    top: calc(5vw + 20px);
+    top: calc(8vw);
     transform: rotate(-15deg);
   }
 }
@@ -49,6 +49,6 @@
     top: 0;
   }
   to {
-    top: calc(5vw + 20px);
+    top: calc(8vw);
   }
 }
