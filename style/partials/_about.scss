@@ -1,0 +1,26 @@
+.about {
+  // margin: 0;
+  text-align: left;
+  display: block;
+  margin-bottom: 10vh;
+
+  &__header {
+    font-size: $font-size-ten;
+    line-height: 1;
+
+    @include mq(desktop) {
+      font-size: $font-size-five;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.info__main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.info__copyright {
+  font-size: $font-size-body;
+  color: $white;
+}

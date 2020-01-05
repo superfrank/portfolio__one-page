@@ -152,24 +152,47 @@ h6 {
   margin: 0;
   font-weight: normal; }
 
+.about {
+  text-align: left;
+  display: block;
+  margin-bottom: 10vh; }
+  .about__header {
+    font-size: 10vw;
+    line-height: 1; }
+    @media all and (min-width: 61.25em) {
+      .about__header {
+        font-size: 5vw;
+        padding-top: 1rem; } }
+
+.info__main {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.info__copyright {
+  font-size: 1.6rem;
+  color: #ffffff; }
+
 .logo {
   margin: 0;
-  height: 56px;
-  padding-top: 0;
-  align-items: center;
+  height: auto;
+  padding-top: 10px;
   display: flex;
   justify-content: left;
   padding-left: 10px; }
-  @media all and (min-width: 23.4375em) {
+  @media all and (min-width: 61.25em) {
     .logo {
-      padding-left: 16px; } }
-  @media all and (min-width: 46.25em) {
+      padding-left: 10px;
+      padding-top: 20px; } }
+  @media all and (min-width: 81.25em) {
     .logo {
-      height: 80px;
       padding-left: 0px; } }
   .logo svg {
-    width: 79px;
-    height: 32px; }
+    width: auto;
+    height: 5vw; }
+    @media all and (min-width: 61.25em) {
+      .logo svg {
+        width: 79px;
+        height: 32px; } }
   .logo .logo__frame,
   .logo .logo__eyes {
     fill: #ff6c6a; }
@@ -187,11 +210,8 @@ h6 {
 .page-head {
   background-color: #fcfcfc;
   width: 100%;
-  height: 56px;
+  height: auto;
   top: 0px; }
-  @media all and (min-width: 46.25em) {
-    .page-head {
-      height: 80px; } }
 
 .site-nav {
   display: flex;
@@ -201,7 +221,7 @@ h6 {
   width: 100%;
   height: 100%;
   background-color: #fcfcfc;
-  height: 56px;
+  height: auto;
   display: block; }
   @media all and (min-width: 61.25em) {
     .site-nav {
@@ -240,17 +260,26 @@ h6 {
 .logo-type {
   display: none; }
 
-.about {
+.footer {
   margin: 0;
-  background-color: #ff6c6a;
+  border-top: 2px solid #121212;
   text-align: left;
   display: block; }
+  .footer__arrow {
+    display: inline-block;
+    width: 16px;
+    height: 21px;
+    background-image: url(../assets/images/arrow-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .footer__top {
+    display: inline; }
 
-.info__main {
+.footer__main {
   display: flex;
   flex-direction: row-reverse; }
 
-.info__copyright {
+.footer__copyright {
   font-size: 1.6rem;
   color: #ffffff; }
 

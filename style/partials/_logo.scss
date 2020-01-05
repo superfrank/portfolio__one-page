@@ -1,24 +1,27 @@
 .logo {
   margin: 0;
-  height: 56px;
-  padding-top: 0;
-  align-items: center;
+  height: auto;
+  padding-top: 10px;
   display: flex;
   justify-content: left;
   padding-left: 10px;
 
-  @include mq(mobileMedium) {
-    padding-left: 16px;
+  @include mq(desktop) {
+    padding-left: 10px;
+    padding-top: 20px;
   }
-
-  @include mq(tablet) {
-    height: 80px;
+  @include mq(wide) {
     padding-left: 0px;
   }
 
   svg {
-    width: 79px;
-    height: 32px;
+    width: auto;
+    height: 5vw;
+
+    @include mq(desktop) {
+      width: 79px;
+      height: 32px;
+    }
   }
 
   .logo__frame,

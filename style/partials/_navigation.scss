@@ -1,12 +1,12 @@
 .page-head {
   background-color: $off-white;
   width: 100%;
-  height: 56px;
+  height: auto;
   top: 0px;
 
-  @include mq(tablet) {
-    height: 80px;
-  }
+  // @include mq(desktop) {
+  //   height: 80px;
+  // }
 }
 
 .site-nav {
@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   background-color: $off-white;
-  height: 56px;
+  height: auto;
   display: block;
 
   @include mq($from: desktop) {

@@ -1,16 +1,30 @@
-.about {
+.footer {
   margin: 0;
-  background-color: $brand-1;
+  // background-color: $brand-1;
+  border-top: 2px solid $black;
   text-align: left;
   display: block;
+
+  &__arrow {
+    display: inline-block;
+    width: 16px;
+    height: 21px;
+    background-image: url(../assets/images/arrow-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__top {
+    display: inline;
+  }
 }
 
-.info__main {
+.footer__main {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.info__copyright {
+.footer__copyright {
   font-size: $font-size-body;
   color: $white;
 }
