@@ -234,7 +234,7 @@ h6 {
   margin: 0;
   list-style: none;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 3vw; }
+  font-size: 5vw; }
   @media all and (min-width: 61.25em) {
     .site-nav__list {
       position: relative;
@@ -264,24 +264,47 @@ h6 {
   margin: 0;
   border-top: 2px solid #121212;
   text-align: left;
-  display: block; }
+  display: block;
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex; }
+  .footer__back-to-top {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto; }
   .footer__arrow {
     display: inline-block;
-    width: 16px;
-    height: 21px;
-    background-image: url(../assets/images/arrow-top.svg);
-    background-repeat: no-repeat;
-    background-size: contain; }
+    width: auto;
+    height: auto; }
+    .footer__arrow svg {
+      width: 2.5vw;
+      height: auto; }
+      @media all and (min-width: 61.25em) {
+        .footer__arrow svg {
+          width: 1vw; } }
   .footer__top {
-    display: inline; }
+    display: inline;
+    font-size: 5vw;
+    color: #121212;
+    padding-left: 0.4rem;
+    line-height: 1; }
+    @media all and (min-width: 61.25em) {
+      .footer__top {
+        font-size: 2vw; } }
 
-.footer__main {
-  display: flex;
-  flex-direction: row-reverse; }
+.footer__copyright-container {
+  justify-self: flex-end;
+  position: relative; }
 
 .footer__copyright {
   font-size: 1.6rem;
-  color: #ffffff; }
+  color: #121212;
+  font-size: 5vw;
+  line-height: 1; }
+  @media all and (min-width: 61.25em) {
+    .footer__copyright {
+      font-size: 2vw; } }
 
 .contact-me {
   display: block;

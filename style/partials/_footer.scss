@@ -4,27 +4,57 @@
   border-top: 2px solid $black;
   text-align: left;
   display: block;
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+
+  &__back-to-top {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+  }
 
   &__arrow {
     display: inline-block;
-    width: 16px;
-    height: 21px;
-    background-image: url(../assets/images/arrow-top.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    width: auto;
+    height: auto;
+
+    svg {
+      width: 2.5vw;
+      height: auto;
+
+      @include mq(desktop) {
+        width: 1vw;
+      }
+    }
   }
 
   &__top {
     display: inline;
+    font-size: $font-size-five;
+    color: $black;
+    padding-left: 0.4rem;
+    line-height: 1;
+
+    @include mq(desktop) {
+      font-size: $font-size-two;
+    }
   }
 }
 
-.footer__main {
-  display: flex;
-  flex-direction: row-reverse;
+.footer__copyright-container {
+  justify-self: flex-end;
+  position: relative;
 }
 
 .footer__copyright {
   font-size: $font-size-body;
-  color: $white;
+  color: $black;
+  font-size: $font-size-five;
+  line-height: 1;
+
+  @include mq(desktop) {
+    font-size: $font-size-two;
+  }
 }
