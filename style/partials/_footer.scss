@@ -1,18 +1,12 @@
 .footer {
-  margin: 0;
-  // background-color: $brand-1;
-  border-top: 2px solid $black;
-  text-align: left;
-  display: block;
-  padding-top: 10px;
-  margin-top: 10px;
   display: flex;
+  justify-content: space-between;
+  border-top: 2px solid $black;
+  padding-top: 1rem;
+  margin-bottom: 32px;
 
-  &__back-to-top {
-    display: block;
-    position: relative;
-    width: auto;
-    height: auto;
+  @include mq(wide) {
+    margin-bottom: 2.5%;
   }
 
   &__arrow {
@@ -41,11 +35,6 @@
       font-size: $font-size-two;
     }
   }
-}
-
-.footer__copyright-container {
-  justify-self: flex-end;
-  position: relative;
 }
 
 .footer__copyright {

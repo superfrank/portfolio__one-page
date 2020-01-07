@@ -162,7 +162,7 @@ h6 {
     @media all and (min-width: 61.25em) {
       .about__header {
         font-size: 5vw;
-        padding-top: 1rem; } }
+        padding-top: 0.5%; } }
 
 .info__main {
   display: flex;
@@ -182,7 +182,7 @@ h6 {
   @media all and (min-width: 61.25em) {
     .logo {
       padding-left: 10px;
-      padding-top: 20px; } }
+      padding-top: 2.5%; } }
   @media all and (min-width: 81.25em) {
     .logo {
       padding-left: 0px; } }
@@ -214,24 +214,11 @@ h6 {
   top: 0px; }
 
 .site-nav {
-  display: flex;
-  justify-content: center;
-  z-index: 10;
-  top: 0;
   width: 100%;
-  height: 100%;
-  background-color: #fcfcfc;
   height: auto;
   display: block; }
-  @media all and (min-width: 61.25em) {
-    .site-nav {
-      max-width: 980px; } }
-  @media all and (min-width: 81.25em) {
-    .site-nav {
-      max-width: 1300px; } }
 
 .site-nav__list {
-  margin: 0;
   list-style: none;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   font-size: 5vw; }
@@ -240,20 +227,23 @@ h6 {
       position: relative;
       margin-top: -66px;
       display: block;
-      font-size: 2vw;
-      top: 10px;
-      right: 10px; } }
+      font-size: 2vw; } }
   .site-nav__list .site-nav__item {
     display: inline;
+    position: relative;
     color: #ff6c6a;
     cursor: pointer;
-    padding: 0;
-    margin: 0 6px;
     border-bottom: none; }
     @media all and (min-width: 46.25em) {
       .site-nav__list .site-nav__item {
-        margin: 0 8px;
         text-align: left; } }
+    .site-nav__list .site-nav__item:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: #121212;
+      left: -6px; }
     .site-nav__list .site-nav__item:hover {
       text-decoration: underline; }
 
@@ -261,18 +251,14 @@ h6 {
   display: none; }
 
 .footer {
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
   border-top: 2px solid #121212;
-  text-align: left;
-  display: block;
-  padding-top: 10px;
-  margin-top: 10px;
-  display: flex; }
-  .footer__back-to-top {
-    display: block;
-    position: relative;
-    width: auto;
-    height: auto; }
+  padding-top: 1rem;
+  margin-bottom: 32px; }
+  @media all and (min-width: 81.25em) {
+    .footer {
+      margin-bottom: 2.5%; } }
   .footer__arrow {
     display: inline-block;
     width: auto;
@@ -292,10 +278,6 @@ h6 {
     @media all and (min-width: 61.25em) {
       .footer__top {
         font-size: 2vw; } }
-
-.footer__copyright-container {
-  justify-self: flex-end;
-  position: relative; }
 
 .footer__copyright {
   font-size: 1.6rem;
