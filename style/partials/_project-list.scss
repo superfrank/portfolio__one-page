@@ -4,6 +4,10 @@
   margin-top: calc(10vw + 80px);
   margin-bottom: calc(10vw + 80px);
 
+  @include mq(wide) {
+    margin-bottom: calc(10vw + 40px);
+  }
+
   &__grid {
     display: grid;
     width: 100%;

@@ -221,31 +221,40 @@ h6 {
 .site-nav__list {
   list-style: none;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 5vw; }
+  font-size: 5vw;
+  margin-bottom: 1rem; }
   @media all and (min-width: 61.25em) {
     .site-nav__list {
       position: relative;
-      margin-top: -66px;
       display: block;
       font-size: 2vw; } }
   .site-nav__list .site-nav__item {
-    display: inline;
+    display: inline-block;
     position: relative;
     color: #ff6c6a;
     cursor: pointer;
-    border-bottom: none; }
-    @media all and (min-width: 46.25em) {
+    border-bottom: none;
+    margin-right: 16px;
+    min-height: 20px;
+    vertical-align: top; }
+    @media all and (min-width: 61.25em) {
       .site-nav__list .site-nav__item {
-        text-align: left; } }
+        margin-right: calc(1% + 6px); } }
+    .site-nav__list .site-nav__item a {
+      position: relative;
+      display: block;
+      vertical-align: top; }
     .site-nav__list .site-nav__item:before {
       content: "";
       position: absolute;
       width: 2px;
       height: 100%;
       background-color: #121212;
-      left: -6px; }
-    .site-nav__list .site-nav__item:hover {
-      text-decoration: underline; }
+      left: -6px;
+      top: 0px; }
+      @media all and (min-width: 61.25em) {
+        .site-nav__list .site-nav__item:before {
+          left: -0.5vw; } }
 
 .logo-type {
   display: none; }
@@ -306,6 +315,9 @@ h6 {
   list-style: none;
   margin-top: calc(10vw + 80px);
   margin-bottom: calc(10vw + 80px); }
+  @media all and (min-width: 81.25em) {
+    .project-list {
+      margin-bottom: calc(10vw + 40px); } }
   .project-list__grid {
     display: grid;
     width: 100%;
