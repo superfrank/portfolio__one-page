@@ -182,7 +182,7 @@ h6 {
   @media all and (min-width: 61.25em) {
     .logo {
       padding-left: 10px;
-      padding-top: 2.5%; } }
+      padding-top: 2.5vh; } }
   @media all and (min-width: 81.25em) {
     .logo {
       padding-left: 0px; } }
@@ -196,22 +196,26 @@ h6 {
   .logo .logo__frame,
   .logo .logo__eyes {
     fill: #ff6c6a; }
-  .logo .logo-type {
-    display: none;
-    font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-    font-size: 3vw;
-    color: #ff6c6a;
-    text-decoration: none;
-    margin-top: -6px; }
-    @media all and (min-width: 61.25em) {
-      .logo .logo-type {
-        font-size: 2vw; } }
 
-.page-head {
-  background-color: #fcfcfc;
-  width: 100%;
-  height: auto;
-  top: 0px; }
+.logo-test {
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  left: 5%;
+  cursor: pointer; }
+  @media all and (min-width: 61.25em) {
+    .logo-test {
+      top: 2.5vh; } }
+  .logo-test svg {
+    width: auto;
+    height: 5vw; }
+    @media all and (min-width: 61.25em) {
+      .logo-test svg {
+        width: 79px;
+        height: 32px; } }
+  .logo-test .logo__frame,
+  .logo-test .logo__eyes {
+    fill: black; }
 
 .site-nav__list {
   list-style: none;
@@ -262,9 +266,6 @@ h6 {
   @media all and (min-width: 61.25em) {
     .site-nav__item:first-of-type {
       margin-left: 0px; } }
-
-.logo-type {
-  display: none; }
 
 .footer {
   display: flex;
@@ -540,13 +541,16 @@ h6 {
     margin-top: 0px; } }
 
 .article__header {
-  height: 600px;
+  display: grid;
+  place-items: center;
+  height: 80vh;
   width: 100vw;
   background-color: #ff6c6a; }
 
-.article__header--image {
-  width: 100%;
-  height: auto;
+.article__header-image {
+  grid-area: 1 / 1;
+  max-height: 70vh;
+  max-width: 90vw;
   display: block; }
 
 .animate span {

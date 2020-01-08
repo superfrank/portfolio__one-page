@@ -8,7 +8,7 @@
 
   @include mq(desktop) {
     padding-left: 10px;
-    padding-top: 2.5%;
+    padding-top: 2.5vh;
   }
   @include mq(wide) {
     padding-left: 0px;
@@ -28,29 +28,31 @@
   .logo__eyes {
     fill: $brand-1;
   }
+}
 
-  &:hover {
-    // svg {
-    //   @include transition-duration(2s);
-    //   display: none;
-    //   transition: ease-out;
-    // }
+.logo-test {
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  left: 5%;
+  cursor: pointer;
 
-    // .logo-type {
-    //     display: block;
-    // }
+  @include mq(desktop) {
+    top: 2.5vh;
   }
 
-  .logo-type {
-    display: none;
-    font-family: $sans-serif;
-    font-size: $font-size-three;
-    color: $brand-1;
-    text-decoration: none;
-    margin-top: -6px;
+  svg {
+    width: auto;
+    height: 5vw;
 
     @include mq(desktop) {
-      font-size: $font-size-two;
+      width: 79px;
+      height: 32px;
     }
+  }
+
+  .logo__frame,
+  .logo__eyes {
+    fill: black;
   }
 }

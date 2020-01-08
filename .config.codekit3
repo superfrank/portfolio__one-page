@@ -97,6 +97,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/internet/header-image-desktop.png": {
+		"ft": 32768,
+		"iS": 112581,
+		"oA": 0,
+		"oAP": "/assets/images/internet/header-image-desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/handlebars-v4.1.2.js": {
 		"bF": 0,
 		"ft": 64,
@@ -359,19 +370,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/style/partials/_navigation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/style/partials/_navigation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/style/partials/_project-list.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -394,6 +392,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/style/partials/_selected-work.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/style/partials/_social.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/style/partials/_social.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
