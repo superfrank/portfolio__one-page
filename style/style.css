@@ -213,48 +213,55 @@ h6 {
   height: auto;
   top: 0px; }
 
-.site-nav {
-  width: 100%;
-  height: auto;
-  display: block; }
-
 .site-nav__list {
   list-style: none;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
   font-size: 5vw;
-  margin-bottom: 1rem; }
+  margin-bottom: 1vw; }
   @media all and (min-width: 61.25em) {
     .site-nav__list {
       position: relative;
-      display: block;
-      font-size: 2vw; } }
+      display: flex;
+      font-size: 2vw;
+      margin-bottom: 1%; } }
   .site-nav__list .site-nav__item {
     display: inline-block;
     position: relative;
     color: #ff6c6a;
     cursor: pointer;
     border-bottom: none;
-    margin-right: 16px;
-    min-height: 20px;
-    vertical-align: top; }
+    margin-right: 5vw;
+    vertical-align: top;
+    justify-content: flex-start; }
     @media all and (min-width: 61.25em) {
       .site-nav__list .site-nav__item {
-        margin-right: calc(1% + 6px); } }
+        margin-right: 2vw; } }
     .site-nav__list .site-nav__item a {
       position: relative;
       display: block;
-      vertical-align: top; }
+      line-height: 1; }
     .site-nav__list .site-nav__item:before {
       content: "";
       position: absolute;
-      width: 2px;
-      height: 100%;
+      width: 1px;
+      height: calc(2vw + 100% + 1px);
       background-color: #121212;
-      left: -6px;
-      top: 0px; }
+      left: -1vw;
+      top: calc(1vw); }
+      @media all and (min-width: 46.25em) {
+        .site-nav__list .site-nav__item:before {
+          width: 2px; } }
       @media all and (min-width: 61.25em) {
         .site-nav__list .site-nav__item:before {
-          left: -0.5vw; } }
+          height: calc(0.65vw + 100%);
+          left: -0.5vw;
+          top: 0.35vw; } }
+
+.site-nav__item:first-of-type {
+  margin-left: 1vw; }
+  @media all and (min-width: 61.25em) {
+    .site-nav__item:first-of-type {
+      margin-left: 0px; } }
 
 .logo-type {
   display: none; }
@@ -262,11 +269,16 @@ h6 {
 .footer {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #121212;
-  padding-top: 1rem;
+  border-top: 1px solid #121212;
+  padding-top: 10px;
   margin-bottom: 32px; }
+  @media all and (min-width: 46.25em) {
+    .footer {
+      border-top: 2px solid #121212;
+      margin-bottom: 48px; } }
   @media all and (min-width: 81.25em) {
     .footer {
+      padding-top: 1%;
       margin-bottom: 2.5%; } }
   .footer__arrow {
     display: inline-block;

@@ -1,11 +1,17 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid $black;
-  padding-top: 1rem;
+  border-top: 1px solid $black;
+  padding-top: 10px;
   margin-bottom: 32px;
 
+  @include mq(tablet) {
+    border-top: 2px solid $black;
+    margin-bottom: 48px;
+  }
+
   @include mq(wide) {
+    padding-top: 1%;
     margin-bottom: 2.5%;
   }
 
