@@ -7,10 +7,16 @@
   &__header {
     font-size: $font-size-ten;
     line-height: 1;
+    // padding top calculates logo size as it's absolutely positioned
+    padding-top: calc(5vw + 1rem);
 
     @include mq(desktop) {
       font-size: $font-size-five;
-      padding-top: 0.5%;
+      padding-top: calc(32px + 1rem);
+    }
+    @include mq(wide) {
+      font-size: $font-size-five;
+      padding-top: calc(2.5vh + 32px);
     }
   }
 }

@@ -1,43 +1,16 @@
 .logo {
-  margin: 0;
-  height: auto;
-  padding-top: 10px;
-  display: flex;
-  justify-content: left;
-  padding-left: 10px;
-
-  @include mq(desktop) {
-    padding-left: 10px;
-    padding-top: 2.5vh;
-  }
-  @include mq(wide) {
-    padding-left: 0px;
-  }
-
-  svg {
-    width: auto;
-    height: 5vw;
-
-    @include mq(desktop) {
-      width: 79px;
-      height: 32px;
-    }
-  }
-
-  .logo__frame,
-  .logo__eyes {
-    fill: $brand-1;
-  }
-}
-
-.logo-test {
   position: absolute;
   z-index: 5;
   top: 10px;
-  left: 5%;
+  left: 10px;
   cursor: pointer;
 
-  @include mq(desktop) {
+  @include mq(tablet) {
+    left: 20px;
+  }
+
+  @include mq(wide) {
+    left: 5%;
     top: 2.5vh;
   }
 

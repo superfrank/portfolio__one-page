@@ -77,9 +77,6 @@ body {
 a {
   color: #ff6c6a;
   text-decoration: none; }
-  a:active {
-    position: relative;
-    top: 1px; }
 
 .bg-link {
   color: #ffffff;
@@ -127,9 +124,6 @@ main {
     .wrapper__background {
       padding-right: 20px;
       padding-left: 20px; } }
-  @media all and (min-width: 61.25em) {
-    .wrapper__background {
-      max-width: 980px; } }
   @media all and (min-width: 81.25em) {
     .wrapper__background {
       max-width: 100%;
@@ -158,11 +152,16 @@ h6 {
   margin-bottom: 10vh; }
   .about__header {
     font-size: 10vw;
-    line-height: 1; }
+    line-height: 1;
+    padding-top: calc(5vw + 1rem); }
     @media all and (min-width: 61.25em) {
       .about__header {
         font-size: 5vw;
-        padding-top: 0.5%; } }
+        padding-top: calc(32px + 1rem); } }
+    @media all and (min-width: 81.25em) {
+      .about__header {
+        font-size: 5vw;
+        padding-top: calc(2.5vh + 32px); } }
 
 .info__main {
   display: flex;
@@ -173,19 +172,18 @@ h6 {
   color: #ffffff; }
 
 .logo {
-  margin: 0;
-  height: auto;
-  padding-top: 10px;
-  display: flex;
-  justify-content: left;
-  padding-left: 10px; }
-  @media all and (min-width: 61.25em) {
+  position: absolute;
+  z-index: 5;
+  top: 10px;
+  left: 10px;
+  cursor: pointer; }
+  @media all and (min-width: 46.25em) {
     .logo {
-      padding-left: 10px;
-      padding-top: 2.5vh; } }
+      left: 20px; } }
   @media all and (min-width: 81.25em) {
     .logo {
-      padding-left: 0px; } }
+      left: 5%;
+      top: 2.5vh; } }
   .logo svg {
     width: auto;
     height: 5vw; }
@@ -195,26 +193,6 @@ h6 {
         height: 32px; } }
   .logo .logo__frame,
   .logo .logo__eyes {
-    fill: #ff6c6a; }
-
-.logo-test {
-  position: absolute;
-  z-index: 5;
-  top: 10px;
-  left: 5%;
-  cursor: pointer; }
-  @media all and (min-width: 61.25em) {
-    .logo-test {
-      top: 2.5vh; } }
-  .logo-test svg {
-    width: auto;
-    height: 5vw; }
-    @media all and (min-width: 61.25em) {
-      .logo-test svg {
-        width: 79px;
-        height: 32px; } }
-  .logo-test .logo__frame,
-  .logo-test .logo__eyes {
     fill: black; }
 
 .site-nav__list {

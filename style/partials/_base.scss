@@ -20,11 +20,6 @@ body {
 a {
   color: $brand-1;
   text-decoration: none;
-
-  &:active {
-    position: relative;
-    top: 1px;
-  }
 }
 
 .bg-link {
@@ -76,9 +71,6 @@ main {
     padding-left: 20px;
   }
 
-  @include mq(desktop) {
-    max-width: 980px;
-  }
   @include mq(wide) {
     max-width: 100%;
     padding-left: 5%;
