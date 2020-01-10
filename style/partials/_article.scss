@@ -2,7 +2,7 @@
   &__header {
     display: grid;
     place-items: center;
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     // justify-content: center;
     // align-items: center;
@@ -12,8 +12,16 @@
 
   &__header-image {
     grid-area: 1 / 1;
-    max-height: 70vh;
+    max-height: 80vh;
+    padding-top: 5vh;
     max-width: 90vw;
     display: block;
   }
+}
+
+.information {
+  background-color: #e55744;
+  color: white;
+  width: 100%;
+  height: 10vh;
 }
