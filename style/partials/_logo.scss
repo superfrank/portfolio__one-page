@@ -23,9 +23,18 @@
       height: 32px;
     }
   }
+}
 
+.logo-home {
   .logo__frame,
   .logo__eyes {
-    fill: black;
+    fill: $brand-1;
+  }
+}
+
+.logo-article {
+  .logo__frame,
+  .logo__eyes {
+    fill: $black;
   }
 }

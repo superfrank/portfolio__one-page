@@ -19,7 +19,6 @@ h2 {
 p,
 .paragraph {
   margin-bottom: 12px;
-  color: #666666;
   font-size: 1.6rem;
   line-height: 2.6rem; }
 
@@ -167,9 +166,14 @@ h6 {
       .logo svg {
         width: 79px;
         height: 32px; } }
-  .logo .logo__frame,
-  .logo .logo__eyes {
-    fill: black; }
+
+.logo-home .logo__frame,
+.logo-home .logo__eyes {
+  fill: #ff6c6a; }
+
+.logo-article .logo__frame,
+.logo-article .logo__eyes {
+  fill: #121212; }
 
 .site-nav__list {
   list-style: none;
@@ -498,7 +502,7 @@ h6 {
   display: grid;
   place-items: center;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   background-color: #ff6c6a; }
 
 .article__header-image {
@@ -508,11 +512,20 @@ h6 {
   max-width: 90vw;
   display: block; }
 
-.information {
+.content {
   background-color: #e55744;
-  color: white;
-  width: 100%;
   height: 10vh; }
+
+.information {
+  display: block;
+  position: relative; }
+  .information__type, .information__year, .information__role {
+    display: inline;
+    color: white; }
+  .information__meta {
+    color: #803025; }
+  .information p {
+    display: inline; }
 
 .animate span {
   display: block;

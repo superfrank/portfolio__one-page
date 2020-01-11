@@ -3,7 +3,7 @@
     display: grid;
     place-items: center;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     // justify-content: center;
     // align-items: center;
     background-color: $brand-1;
@@ -19,9 +19,27 @@
   }
 }
 
-.information {
+.content {
   background-color: #e55744;
-  color: white;
-  width: 100%;
   height: 10vh;
+}
+
+.information {
+  display: block;
+  position: relative;
+
+  &__type,
+  &__year,
+  &__role {
+    display: inline;
+    color: white;
+  }
+
+  &__meta {
+    color: #803025;
+  }
+
+  p {
+    display: inline;
+  }
 }
