@@ -18,7 +18,7 @@ h2 {
 
 p,
 .paragraph {
-  margin-bottom: 12px;
+  margin-bottom: 5vw;
   font-size: 1.6rem;
   line-height: 2.6rem; }
 
@@ -501,28 +501,49 @@ h6 {
 .article__header {
   display: grid;
   place-items: center;
-  height: 90vh;
+  height: 50vh;
   width: 100%;
   background-color: #ff6c6a; }
+  @media all and (min-width: 61.25em) {
+    .article__header {
+      height: 90vh; } }
 
 .article__header-image {
   grid-area: 1 / 1;
-  max-height: 80vh;
-  padding-top: 5vh;
+  max-height: 40vh;
   max-width: 90vw;
   display: block; }
+  @media all and (min-width: 61.25em) {
+    .article__header-image {
+      padding-top: 2.5vh;
+      max-height: 80vh; } }
+
+.article .mobile {
+  display: block; }
+
+.article .desktop {
+  display: none; }
+
+@media all and (min-width: 61.25em) {
+  .article .mobile {
+    display: none; }
+  .article .desktop {
+    display: block; } }
 
 .content {
   background-color: #e55744;
-  padding-top: 3vh; }
+  padding-top: 1rem; }
+  @media all and (min-width: 61.25em) {
+    .content {
+      padding-top: 2.5vh; } }
 
 .grid {
   display: grid;
   grid-template-columns: 2fr 3fr 1.5fr;
   grid-column-gap: 1.5vw; }
 
-.gr-2 {
-  grid-column: span 2; }
+.gr-3 {
+  grid-column: span 3; }
 
 h3 {
   font-size: 1.5vw;
@@ -532,33 +553,97 @@ h3 {
   grid-column: 2; }
 
 .headline {
-  font-size: 8vw;
+  font-size: 10vw;
   color: white;
   line-height: 1;
-  margin-top: 1vw;
-  margin-bottom: 2vw; }
+  margin-bottom: 2vw;
+  grid-column: span 3; }
+  @media all and (min-width: 61.25em) {
+    .headline {
+      font-size: 8vw;
+      margin-top: 1vw;
+      grid-column: span 2; } }
   .headline__link {
-    font-size: 1vw;
-    display: inline; }
+    display: none; }
+    @media all and (min-width: 61.25em) {
+      .headline__link {
+        display: inline;
+        font-size: 1vw;
+        margin-left: 1vw; } }
+    .headline__link a {
+      color: white; }
+    .headline__link::before {
+      content: "";
+      background-image: url(../assets/images/internet/arrow-right.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      display: inline-block;
+      width: 4vw;
+      height: 4vw;
+      position: relative;
+      margin-right: 1vw; }
+      @media all and (min-width: 61.25em) {
+        .headline__link::before {
+          width: 1vw;
+          height: 1vw;
+          margin-right: 0.25vw; } }
+
+.standfirst {
+  grid-column: span 3;
+  font-size: 3.5vw; }
+  @media all and (min-width: 61.25em) {
+    .standfirst {
+      grid-column: 2 / span 1;
+      font-size: 1.5vw; } }
 
 .link-arrow {
-  transform: rotate(90deg);
-  display: inline-block;
-  height: auto;
-  width: 23px; }
+  display: inline;
+  position: relative;
+  height: 2em;
+  width: auto;
+  margin-right: 12px; }
 
 .information {
   display: block;
   position: relative;
-  grid-column: 2; }
-  .information__type, .information__year, .information__role {
-    display: inline;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  font-size: 4vw;
+  line-height: 1; }
+  @media all and (min-width: 61.25em) {
+    .information {
+      font-size: 1.5vw; } }
+  @media all and (min-width: 61.25em) {
+    .information {
+      grid-column: 2 / span 1;
+      grid-row: 1; } }
+  .information__type, .information__year, .information__role, .information__link {
+    display: inline-block;
     color: white;
     margin-right: 1.5vw; }
+  .information__role {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 0; }
+    @media all and (min-width: 61.25em) {
+      .information__role {
+        margin-top: 0rem; } }
+  .information__link {
+    margin-top: 1rem;
+    margin-bottom: 4rem; }
+  .information__data {
+    display: inline;
+    color: white; }
+    @media all and (min-width: 61.25em) {
+      .information__data {
+        font-size: 1vw; } }
   .information__meta {
+    display: inline;
     color: #803025; }
-  .information p {
-    display: inline; }
+    @media all and (min-width: 61.25em) {
+      .information__meta {
+        font-size: 1vw; } }
 
 .animate span {
   display: block;
