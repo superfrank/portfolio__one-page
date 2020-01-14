@@ -1,3 +1,5 @@
+// import Marquee3k from "marquee3000";
+
 window.onload = function() {
   const source = document.getElementById("entry-template").innerHTML;
   const template = Handlebars.compile(source);

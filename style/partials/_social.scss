@@ -57,8 +57,12 @@
 }
 
 .site-nav__item:first-of-type {
-  margin-left: 1vw;
+  // margin-left: 1vw;
   @include mq(desktop) {
     margin-left: 0px;
   }
+}
+
+.site-nav__item:last-of-type {
+  margin-right: 0px;
 }
