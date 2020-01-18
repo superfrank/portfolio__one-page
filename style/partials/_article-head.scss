@@ -1,5 +1,5 @@
 .article {
-  &__header {
+  .header {
     display: grid;
     place-items: center;
     height: 50vh;
@@ -8,23 +8,49 @@
     // align-items: center;
     background-color: $brand-1;
     // padding: 5%;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
 
     @include mq(desktop) {
       height: 90vh;
+      min-height: 500px;
+    }
+    &-container {
+      grid-area: 1 / 1;
+      max-height: 90%;
+      max-width: 90vw;
+      position: relative;
+
+      @include mq(desktop) {
+        padding-top: 2.5vh;
+        // max-height: 80%;
+      }
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      .header-image__two {
+        position: absolute;
+        right: 23%;
+        top: 53%;
+        max-height: auto;
+        // opacity: 0.8;
+        max-width: 76%;
+
+        @include mq(desktop) {
+          right: 2%;
+          top: 18%;
+          max-height: 25%;
+          max-width: 25%;
+        }
+      }
     }
   }
 
-  &__header-image {
-    grid-area: 1 / 1;
-    max-height: 40vh;
-
-    max-width: 90vw;
-    display: block;
-
-    @include mq(desktop) {
-      padding-top: 2.5vh;
-      max-height: 80vh;
-    }
+  &__gif-one {
   }
 
   .mobile {
@@ -46,12 +72,13 @@
   }
 }
 
-.content {
+.introduction {
   background-color: #e55744;
   padding-top: 1rem;
-
+  padding-bottom: 4.8rem;
   @include mq(desktop) {
     padding-top: 2.5vh;
+    padding-bottom: 10vh;
   }
 }
 
@@ -94,15 +121,12 @@ h3 {
       font-size: $font-size-one;
       margin-left: 1vw;
     }
-
-    a {
-      color: white;
-    }
+    color: white;
 
     &::before {
       content: "";
       background-image: url(../assets/images/internet/arrow-right.svg);
-      background-size:contain;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: bottom;
       display: inline-block;
@@ -117,13 +141,12 @@ h3 {
         margin-right: 0.25vw;
       }
     }
-    
   }
 }
 
 .standfirst {
   grid-column: span 3;
-  font-size: 3.5vw;
+  font-size: 5vw;
   @include mq(desktop) {
     grid-column: 2 / span 1;
     font-size: 1.5vw;
@@ -177,6 +200,10 @@ h3 {
   &__link {
     margin-top: 1rem;
     margin-bottom: 4rem;
+
+    .headline__link {
+      display: block;
+    }
   }
 
   &__data {

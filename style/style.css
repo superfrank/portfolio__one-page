@@ -499,25 +499,42 @@ h6 {
   100% {
     margin-top: 0px; } }
 
-.article__header {
+.article .header {
   display: grid;
   place-items: center;
   height: 50vh;
   width: 100%;
-  background-color: #ff6c6a; }
+  background-color: #ff6c6a;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px; }
   @media all and (min-width: 61.25em) {
-    .article__header {
-      height: 90vh; } }
-
-.article__header-image {
-  grid-area: 1 / 1;
-  max-height: 40vh;
-  max-width: 90vw;
-  display: block; }
-  @media all and (min-width: 61.25em) {
-    .article__header-image {
-      padding-top: 2.5vh;
-      max-height: 80vh; } }
+    .article .header {
+      height: 90vh;
+      min-height: 500px; } }
+  .article .header-container {
+    grid-area: 1 / 1;
+    max-height: 90%;
+    max-width: 90vw;
+    position: relative; }
+    @media all and (min-width: 61.25em) {
+      .article .header-container {
+        padding-top: 2.5vh; } }
+    .article .header-container img {
+      max-height: 100%;
+      max-width: 100%; }
+    .article .header-container .header-image__two {
+      position: absolute;
+      right: 23%;
+      top: 53%;
+      max-height: auto;
+      max-width: 76%; }
+      @media all and (min-width: 61.25em) {
+        .article .header-container .header-image__two {
+          right: 2%;
+          top: 18%;
+          max-height: 25%;
+          max-width: 25%; } }
 
 .article .mobile {
   display: block; }
@@ -531,12 +548,14 @@ h6 {
   .article .desktop {
     display: block; } }
 
-.content {
+.introduction {
   background-color: #e55744;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 4.8rem; }
   @media all and (min-width: 61.25em) {
-    .content {
-      padding-top: 2.5vh; } }
+    .introduction {
+      padding-top: 2.5vh;
+      padding-bottom: 10vh; } }
 
 .grid {
   display: grid;
@@ -565,14 +584,13 @@ h3 {
       margin-top: 1vw;
       grid-column: span 2; } }
   .headline__link {
-    display: none; }
+    display: none;
+    color: white; }
     @media all and (min-width: 61.25em) {
       .headline__link {
         display: inline;
         font-size: 1vw;
         margin-left: 1vw; } }
-    .headline__link a {
-      color: white; }
     .headline__link::before {
       content: "";
       background-image: url(../assets/images/internet/arrow-right.svg);
@@ -592,7 +610,7 @@ h3 {
 
 .standfirst {
   grid-column: span 3;
-  font-size: 3.5vw; }
+  font-size: 5vw; }
   @media all and (min-width: 61.25em) {
     .standfirst {
       grid-column: 2 / span 1;
@@ -633,6 +651,8 @@ h3 {
   .information__link {
     margin-top: 1rem;
     margin-bottom: 4rem; }
+    .information__link .headline__link {
+      display: block; }
   .information__data {
     display: inline;
     color: white; }
@@ -645,6 +665,40 @@ h3 {
     @media all and (min-width: 61.25em) {
       .information__meta {
         font-size: 1vw; } }
+
+.article .content {
+  padding-top: 4rem;
+  padding-bottom: 4.8rem; }
+  @media all and (min-width: 61.25em) {
+    .article .content {
+      padding-top: 5vw;
+      padding-bottom: 10vh; } }
+
+.article .item {
+  margin-bottom: 2rem; }
+  @media all and (min-width: 61.25em) {
+    .article .item {
+      margin-bottom: 5vh; } }
+
+.article .image img {
+  width: 100%;
+  height: 100%; }
+
+.article .image__background {
+  background-color: #ff6c6a;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; }
+
+.article .image__container {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  max-width: 90%;
+  height: auto;
+  position: relative; }
+
+.article .image__floating {
+  box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.4); }
 
 .animate span {
   display: block;
@@ -693,15 +747,14 @@ h3 {
   width: 100%;
   position: relative;
   overflow: hidden; }
+  .marquee3k__container a {
+    color: blue; }
 
 .marquee3k__copy {
   font-size: 40px; }
   @media all and (min-width: 61.25em) {
     .marquee3k__copy {
       padding-right: 80vw; } }
-
-a {
-  color: blue; }
 
 .marquee__list {
   display: flex;

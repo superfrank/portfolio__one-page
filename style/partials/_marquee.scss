@@ -2,6 +2,9 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  a {
+    color: blue;
+  }
 }
 
 .marquee3k__copy {
@@ -10,10 +13,6 @@
   @include mq(desktop) {
     padding-right: 80vw;
   }
-}
-
-a {
-  color: blue;
 }
 
 .marquee__list {

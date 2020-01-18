@@ -35,15 +35,18 @@
     <div id="one-page">
     <script id="entry-template" type="text/x-handlebars-template">
       <div class="article">
-          <div class="article__header">
-              <img class="article__header-image desktop" src="assets/images/internet/header-image-desktop.png"/>
-              <img class="article__header-image mobile" src="assets/images/feature-image.png"/>
-          </div>
-          <div class="content wrapper">
+          <div class="header">
+              <div class="header-container">
+                  <img class="header-image__mobile mobile" src="assets/images/feature-image.png"/>
+                  <img class="header-image__desktop desktop" src="assets/images/internet/header-image-no-gif.png"/>
+                  <img class="header-image__two" src="assets/images/internet/shifty-eyes-slow.gif"/>
+              </div>
+            </div>
+          <div class="introduction wrapper">
             <div class="grid">
               <div class="information">
                 <div class="information__type">
-                  <div class="information__meta">Type: </div><div class="information__data">Interactive article</div>
+                  <div class="information__meta">Type: </div><div class="information__data">Interactive</div>
                 </div>
                 <div class="information__year">
                   <div class="information__meta">Year: </div><div class="information__data">2019</div>
@@ -51,19 +54,34 @@
                 <div class="information__role">
                   <div class="information__meta">Role: </div><div class="information__data">Art Direction, Design, Illustration, Front-end</div>
                 </div>
-                <div class="information__link headline__link mobile"><a href="https://gu.com/p/a2438">Live article</a></div>
+                <div class="information__link mobile"><a class="headline__link" href="https://gu.com/p/a2438">Live article</a></div>
               </div>
-                <h1 class="headline gr-2">The internet but not as we know it<span class="headline__link"><a href="https://gu.com/p/a2438">Live article</a></span></h1>
+                <h1 class="headline gr-2">The internet but not as we know it<span><a class="headline__link" href="https://gu.com/p/a2438">Live article</a></span></h1>
                 <h3 class="standfirst fr-2">
-                  More than half of the world's population is now online, but that doesn’t mean we all see the same thing. From being filtered by the government to being delivered by post, the internet can vary enormously depending on where you live. What does life online look like in China, Cuba, India and Russia.
+                  More than half of the world's population is now online, but that doesn’t mean we all see the same thing. From being filtered by the government to being delivered by post, the internet can vary enormously depending on where you live.
                 </h3>
                 <h3 class="standfirst fr-2">
-                  Is now online, but that doesn’t mean we all see the same thing. From being filtered by the government to being delivered by post, the internet can vary enormously depending on where you live. What does life online look like China, Cuba, India and Russia.More than half of the world's population is now online, but that doesn’t mean we all see the same thing. From being filtered by the government to being delivered by post, the internet can vary enormously depending on where you live. What does life online look like China, Cuba, India and Russia.
+                  From being filtered by the government to being delivered by post, the internet can vary enormously depending on where you live. What does life online look like China, Cuba, India and Russia.
                 </h3>
             </div>
           </div>
+          <div class="content wrapper">
+            <div class="grid">
+              <div class="item image image__background gr-3">
+                <div class="image__container">
+                  <img class="image__floating image__one" src="assets/images/internet/image-1.png">
+                </div>
+              </div>
+              <div class="item text text__full">
+                <h1>India</h1>
+                <p>India was a great place to start, as using mobile chat messages as a device lets users know this isn’t a regular news article and starts them scrolling</p>
+              </div>
+              <div class="item text text__inline"></div>
+              </div>
+          </div>
       </div>
     </div>
+  </div>
     </script>
   </body>
 </html>

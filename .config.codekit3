@@ -118,6 +118,36 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/internet/header-image-no-gif.png": {
+		"ft": 32768,
+		"iS": 62497,
+		"oA": 0,
+		"oAP": "/assets/images/internet/header-image-no-gif.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/internet/image-1.png": {
+		"ft": 32768,
+		"iS": 103580,
+		"oA": 0,
+		"oAP": "/assets/images/internet/image-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/internet/shifty-eyes-slow.gif": {
+		"ft": 4194304,
+		"iS": 11818,
+		"oA": 0,
+		"oAP": "/assets/images/internet/shifty-eyes-slow.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"/handlebars-v4.1.2.js": {
 		"bF": 0,
 		"ft": 64,
@@ -163,6 +193,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/app-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/marquee-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/marquee-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -313,7 +354,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/style/partials/_article.scss": {
+	"/style/partials/_article-content.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -321,7 +362,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/style/partials/_article.css",
+		"oAP": "/style/partials/_article-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/style/partials/_article-head.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/style/partials/_article-head.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
