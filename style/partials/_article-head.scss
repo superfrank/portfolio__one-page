@@ -15,7 +15,9 @@
     @include mq(desktop) {
       height: 90vh;
       min-height: 500px;
+      padding-top: 2.5vh;
     }
+
     &-container {
       grid-area: 1 / 1;
       max-height: 90%;
@@ -23,7 +25,6 @@
       position: relative;
 
       @include mq(desktop) {
-        padding-top: 2.5vh;
         // max-height: 80%;
       }
 
@@ -32,19 +33,70 @@
         max-width: 100%;
       }
 
-      .header-image__two {
+      .gif {
         position: absolute;
-        right: 23%;
-        top: 53%;
         max-height: auto;
-        // opacity: 0.8;
-        max-width: 76%;
+        &__one {
+          right: 23%;
+          top: 53%;
+          max-width: 76%;
 
-        @include mq(desktop) {
-          right: 2%;
-          top: 18%;
-          max-height: 25%;
-          max-width: 25%;
+          @include mq(desktop) {
+            right: 1%;
+            top: 12%;
+            max-width: 26%;
+          }
+        }
+        &__two {
+          left: 15%;
+          top: 13%;
+          max-width: 13%;
+
+          @include mq(desktop) {
+            left: 50.2%;
+            top: 38.5%;
+            opacity: 0.8;
+            max-width: 4%;
+          }
+        }
+        &__three {
+          right: 0.5%;
+          top: 35%;
+          width: 16%;
+
+          @include mq(desktop) {
+            right: 11%;
+            top: 67%;
+            width: 5.8%;
+          }
+        }
+        &__four {
+          @include mq(desktop) {
+            left: 31.4%;
+            top: 17%;
+            width: 3%;
+          }
+        }
+        &__five {
+          @include mq(desktop) {
+            left: 13.5%;
+            top: 38%;
+            width: 6%;
+          }
+        }
+        &__six {
+          @include mq(desktop) {
+            left: 20.5%;
+            bottom: 22%;
+            width: 21.5%;
+          }
+        }
+        &__seven {
+          @include mq(desktop) {
+            left: 18.8%;
+            bottom: 13%;
+            width: 6%;
+          }
         }
       }
     }
