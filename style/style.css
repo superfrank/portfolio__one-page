@@ -124,7 +124,7 @@ h6 {
 .about {
   text-align: left;
   display: block;
-  margin-bottom: 10vh; }
+  margin-bottom: 15vh; }
   .about__header {
     font-size: 10vw;
     line-height: 1;
@@ -350,12 +350,44 @@ h6 {
   .featured-project__image {
     max-width: 90%;
     justify-self: center; }
+    .featured-project__image img {
+      width: 100%;
+      height: auto; }
     @media all and (min-width: 61.25em) {
       .featured-project__image {
         max-width: 500px; } }
     @media all and (min-width: 81.25em) {
       .featured-project__image {
         max-width: 672px; } }
+    .featured-project__image .gif {
+      position: absolute;
+      max-height: auto; }
+      .featured-project__image .gif__one {
+        right: 25.5%;
+        top: 53%;
+        max-width: 68%; }
+        @media all and (min-width: 61.25em) {
+          .featured-project__image .gif__one {
+            right: 23%;
+            top: 53%;
+            max-width: 76%; } }
+      .featured-project__image .gif__two {
+        left: 19%;
+        top: 13%;
+        max-width: 11%; }
+        @media all and (min-width: 61.25em) {
+          .featured-project__image .gif__two {
+            left: 15%;
+            max-width: 13%; } }
+      .featured-project__image .gif__three {
+        right: 5.5%;
+        top: 32%;
+        width: 15%; }
+        @media all and (min-width: 61.25em) {
+          .featured-project__image .gif__three {
+            right: 0.5%;
+            top: 35%;
+            width: 16%; } }
   .featured-project__image-group {
     display: grid;
     position: relative;
@@ -425,7 +457,7 @@ h6 {
     height: 84px;
     width: 8px; }
     .featured-project__arrow--top svg {
-      animation: arrow 5s infinite linear; }
+      animation: arrow 5s infinite ease-in-out; }
     @media all and (min-width: 46.25em) {
       .featured-project__arrow--top {
         height: 168px;
@@ -541,7 +573,6 @@ h6 {
           .article .header-container .gif__two {
             left: 50.2%;
             top: 38.5%;
-            opacity: 0.8;
             max-width: 4%; } }
       .article .header-container .gif__three {
         right: 0.5%;

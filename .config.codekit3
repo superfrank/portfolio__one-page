@@ -65,17 +65,6 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
-	"/assets/images/feature-image.png": {
-		"ft": 32768,
-		"iS": 7769,
-		"oA": 0,
-		"oAP": "/assets/images/feature-image.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/assets/images/featured-project-circle.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -107,6 +96,14 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/internet/clippy-3sec.gif": {
+		"ft": 4194304,
+		"iS": 60441,
+		"oA": 0,
+		"oAP": "/assets/images/internet/clippy-3sec.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"/assets/images/internet/clippy.gif": {
 		"ft": 4194304,
 		"iS": 47642,
@@ -122,6 +119,17 @@
 		"oAP": "/assets/images/internet/ellipsis.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"/assets/images/internet/feature-image.png": {
+		"ft": 32768,
+		"iS": 7769,
+		"oA": 0,
+		"oAP": "/assets/images/internet/feature-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/assets/images/internet/globe-folder-slow.gif": {
 		"ft": 4194304,
@@ -174,6 +182,22 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/assets/images/internet/hourglass-1.5sec.gif": {
+		"ft": 4194304,
+		"iS": 3856,
+		"oA": 0,
+		"oAP": "/assets/images/internet/hourglass-1.5sec.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/assets/images/internet/hourglass-2sec.gif": {
+		"ft": 4194304,
+		"iS": 3866,
+		"oA": 0,
+		"oAP": "/assets/images/internet/hourglass-2sec.gif",
+		"oF": 0,
+		"opt": 1
 		},
 	"/assets/images/internet/hourglass.gif": {
 		"ft": 4194304,
