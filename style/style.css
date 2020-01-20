@@ -627,11 +627,23 @@ h6 {
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 3fr 1.5fr;
-  grid-column-gap: 1.5vw; }
-
-.gr-3 {
-  grid-column: span 3; }
+  grid-template-columns: 1fr; }
+  @media all and (min-width: 61.25em) {
+    .grid {
+      grid-template-columns: 2fr 3fr 1.5fr;
+      grid-column-gap: 1.5vw; }
+      .grid__1-1 {
+        grid-column: 1 / span 1; }
+      .grid__1-2 {
+        grid-column: 1 / span 2; }
+      .grid__1-3 {
+        grid-column: 1 / span 3; }
+      .grid__2-1 {
+        grid-column: 2 / span 1; }
+      .grid__2-2 {
+        grid-column: 2 / span 2; }
+      .grid__3-1 {
+        grid-column: 3 / span 1; } }
 
 h3 {
   font-size: 1.5vw;
@@ -678,11 +690,13 @@ h3 {
 
 .standfirst {
   grid-column: span 3;
-  font-size: 5vw; }
+  font-size: 5vw;
+  margin-bottom: 4vw; }
   @media all and (min-width: 61.25em) {
     .standfirst {
       grid-column: 2 / span 1;
-      font-size: 1.5vw; } }
+      font-size: 2vw;
+      margin-bottom: 2vw; } }
 
 .link-arrow {
   display: inline;
@@ -767,6 +781,12 @@ h3 {
 
 .article .image__floating {
   box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.4); }
+
+.article .text__header {
+  grid-column: 1 / span 1; }
+
+.article .text p {
+  grid-column: 2 / span 2; }
 
 .animate span {
   display: block;
