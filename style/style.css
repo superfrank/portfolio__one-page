@@ -17,10 +17,16 @@ h2 {
       font-size: 5vw; } }
 
 p,
-.paragraph {
-  margin-bottom: 5vw;
-  font-size: 1.6rem;
-  line-height: 2.6rem; }
+.text__body {
+  margin-top: 0;
+  margin-bottom: 2vw;
+  font-size: 1.8rem;
+  line-height: 1.5; }
+  @media all and (min-width: 61.25em) {
+    p,
+    .text__body {
+      font-size: 1.5vw;
+      margin-bottom: 1.5vw; } }
 
 .featured-project__subheader {
   color: #666666;
@@ -36,7 +42,7 @@ p,
 .project-list__description {
   color: #121212;
   font-family: "GT-Pressura-Regular", "Futura", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   font-weight: normal; }
   @media all and (min-width: 46.25em) {
@@ -143,7 +149,7 @@ h6 {
   flex-direction: row-reverse; }
 
 .info__copyright {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #ffffff; }
 
 .logo {
@@ -261,7 +267,7 @@ h6 {
         font-size: 2vw; } }
 
 .footer__copyright {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #121212;
   font-size: 5vw;
   line-height: 1; }
@@ -630,7 +636,7 @@ h6 {
   grid-template-columns: 1fr; }
   @media all and (min-width: 61.25em) {
     .grid {
-      grid-template-columns: 2fr 3fr 1.5fr;
+      grid-template-columns: 3fr 6fr 3fr;
       grid-column-gap: 1.5vw; }
       .grid__1-1 {
         grid-column: 1 / span 1; }
@@ -780,10 +786,18 @@ h3 {
   position: relative; }
 
 .article .image__floating {
-  box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 4px 4px; }
+  @media all and (min-width: 61.25em) {
+    .article .image__floating {
+      box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.4);
+      border-radius: 0 0 8px 8px; } }
 
 .article .text__header {
   grid-column: 1 / span 1; }
+  @media all and (min-width: 61.25em) {
+    .article .text__header {
+      margin-top: -0.5vw; } }
 
 .article .text p {
   grid-column: 2 / span 2; }

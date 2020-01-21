@@ -134,7 +134,7 @@
   display: grid;
   grid-template-columns: 1fr;
   @include mq(desktop) {
-    grid-template-columns: 2fr 3fr 1.5fr;
+    grid-template-columns: 3fr 6fr 3fr;
     grid-column-gap: 1.5vw;
     &__1-1 {
       grid-column: 1 / span 1;

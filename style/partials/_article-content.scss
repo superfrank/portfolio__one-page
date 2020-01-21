@@ -32,12 +32,20 @@
       position: relative;
     }
     &__floating {
-      box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.4);
+      border-radius: 0 0 4px 4px;
+      @include mq(desktop) {
+        box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.4);
+        border-radius: 0 0 8px 8px;
+      }
     }
   }
   .text {
     &__header {
       grid-column: 1 / span 1;
+      @include mq(desktop) {
+        margin-top: -0.5vw;
+      }
     }
 
     p {
