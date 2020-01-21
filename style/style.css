@@ -606,8 +606,8 @@ h6 {
           width: 21.5%; } }
       @media all and (min-width: 61.25em) {
         .article .header-container .gif__seven {
-          left: 18.8%;
-          bottom: 13%;
+          left: 18.9%;
+          bottom: 12.8%;
           width: 6%; } }
 
 .article .mobile {
@@ -636,7 +636,7 @@ h6 {
   grid-template-columns: 1fr; }
   @media all and (min-width: 61.25em) {
     .grid {
-      grid-template-columns: 3fr 6fr 3fr;
+      grid-template-columns: 3fr 3fr 3fr 3fr;
       grid-column-gap: 1.5vw; }
       .grid__1-1 {
         grid-column: 1 / span 1; }
@@ -644,31 +644,37 @@ h6 {
         grid-column: 1 / span 2; }
       .grid__1-3 {
         grid-column: 1 / span 3; }
-      .grid__2-1 {
-        grid-column: 2 / span 1; }
+      .grid__1-4 {
+        grid-column: 1 / span 4; }
       .grid__2-2 {
+        grid-column: 2 / span 1; }
+      .grid__2-3 {
         grid-column: 2 / span 2; }
-      .grid__3-1 {
-        grid-column: 3 / span 1; } }
+      .grid__2-4 {
+        grid-column: 2 / span 3; }
+      .grid__3-3 {
+        grid-column: 3 / span 1; }
+      .grid__3-4 {
+        grid-column: 3 / span 2; }
+      .grid__4-4 {
+        grid-column: 4 / span 1; } }
+
+.align-end {
+  align-self: end; }
 
 h3 {
   font-size: 1.5vw;
   color: white; }
 
-.fr-2 {
-  grid-column: 2; }
-
 .headline {
   font-size: 10vw;
   color: white;
   line-height: 1;
-  margin-bottom: 2vw;
-  grid-column: span 3; }
+  margin-bottom: 2vw; }
   @media all and (min-width: 61.25em) {
     .headline {
       font-size: 8vw;
-      margin-top: 1vw;
-      grid-column: span 2; } }
+      margin-top: 1vw; } }
   .headline__link {
     display: none;
     color: white; }
@@ -695,12 +701,10 @@ h3 {
           margin-right: 0.25vw; } }
 
 .standfirst {
-  grid-column: span 3;
   font-size: 5vw;
   margin-bottom: 4vw; }
   @media all and (min-width: 61.25em) {
     .standfirst {
-      grid-column: 2 / span 1;
       font-size: 2vw;
       margin-bottom: 2vw; } }
 
@@ -714,7 +718,6 @@ h3 {
 .information {
   display: block;
   position: relative;
-  grid-column: 1 / span 3;
   grid-row: 2;
   font-size: 4vw;
   line-height: 1; }
@@ -723,7 +726,6 @@ h3 {
       font-size: 1.5vw; } }
   @media all and (min-width: 61.25em) {
     .information {
-      grid-column: 2 / span 1;
       grid-row: 1; } }
   .information__type, .information__year, .information__role, .information__link {
     display: inline-block;
@@ -801,6 +803,20 @@ h3 {
 
 .article .text p {
   grid-column: 2 / span 2; }
+
+.article .caption {
+  margin-bottom: 0; }
+  .article .caption svg {
+    width: auto;
+    height: 40px;
+    transform: rotate(90deg);
+    margin-top: 20px; }
+    @media all and (min-width: 61.25em) {
+      .article .caption svg {
+        transform: rotate(0deg); } }
+  .article .caption__header {
+    display: block;
+    color: #ff6c6a; }
 
 .animate span {
   display: block;

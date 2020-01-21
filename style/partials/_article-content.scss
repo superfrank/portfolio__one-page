@@ -52,4 +52,21 @@
       grid-column: 2 / span 2;
     }
   }
+  .caption {
+    margin-bottom: 0;
+    svg {
+      width: auto;
+      height: 40px;
+      transform: rotate(90deg);
+      margin-top: 20px;
+
+      @include mq(desktop) {
+        transform: rotate(0deg);
+      }
+    }
+    &__header {
+      display: block;
+      color: $brand-1;
+    }
+  }
 }

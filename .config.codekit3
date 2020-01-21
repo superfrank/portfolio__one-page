@@ -118,13 +118,23 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/internet/article/vector-hand.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/images/internet/article/vector-hand.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/images/internet/clippy-3sec.gif": {
 		"ft": 4194304,
 		"iS": 60441,
 		"oA": 0,
 		"oAP": "/assets/images/internet/clippy-3sec.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"/assets/images/internet/clippy.gif": {
 		"ft": 4194304,
@@ -132,7 +142,7 @@
 		"oA": 0,
 		"oAP": "/assets/images/internet/clippy.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"/assets/images/internet/ellipsis.gif": {
 		"ft": 4194304,
