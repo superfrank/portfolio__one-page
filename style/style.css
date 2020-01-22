@@ -795,6 +795,15 @@ h3 {
       box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.4);
       border-radius: 0 0 8px 8px; } }
 
+.article .image__fade {
+  position: absolute;
+  padding-top: 5vw;
+  opacity: 0;
+  top: 0;
+  animation: fade 4s infinite ease-in-out;
+  transform: rotateZ(360deg);
+  box-shadow: none; }
+
 .article .text__header {
   grid-column: 1 / span 1; }
   @media all and (min-width: 61.25em) {
@@ -805,18 +814,37 @@ h3 {
   grid-column: 2 / span 2; }
 
 .article .caption {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  display: block; }
   .article .caption svg {
     width: auto;
-    height: 40px;
+    height: 4vw;
     transform: rotate(90deg);
-    margin-top: 20px; }
+    margin-top: 20px;
+    display: inline; }
     @media all and (min-width: 61.25em) {
       .article .caption svg {
-        transform: rotate(0deg); } }
+        transform: rotate(0deg);
+        height: 3vw; } }
   .article .caption__header {
-    display: block;
+    display: inline;
     color: #ff6c6a; }
+  .article .caption__body {
+    display: block; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  15% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  75% {
+    opacity: 1; }
+  85% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 
 .animate span {
   display: block;

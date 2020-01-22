@@ -10,6 +10,7 @@
   "license": "UNLICENSED",
   "repository": {},
   "dependencies": {
+    "animejs": "^3.1.0",
     "grunt": "^1.0.4",
     "handlebars": "^4.1.2",
     "marquee3000": "^1.0.9",

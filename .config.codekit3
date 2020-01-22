@@ -96,6 +96,28 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/assets/images/internet/article/china-1.png": {
+		"ft": 32768,
+		"iS": 27384,
+		"oA": 0,
+		"oAP": "/assets/images/internet/article/china-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/internet/article/china-2.png": {
+		"ft": 32768,
+		"iS": 157790,
+		"oA": 0,
+		"oAP": "/assets/images/internet/article/china-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/internet/article/image-1.png": {
 		"ft": 32768,
 		"iS": 103580,
@@ -117,6 +139,22 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/assets/images/internet/article/india-scroll-desktop.gif": {
+		"ft": 4194304,
+		"iS": 4638825,
+		"oA": 0,
+		"oAP": "/assets/images/internet/article/india-scroll-desktop.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/assets/images/internet/article/india-scroll-mobile.gif": {
+		"ft": 4194304,
+		"iS": 1185110,
+		"oA": 0,
+		"oAP": "/assets/images/internet/article/india-scroll-mobile.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"/assets/images/internet/article/vector-hand.svg": {
 		"ft": 2097152,
